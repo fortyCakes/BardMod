@@ -1,0 +1,54 @@
+{
+  "Strike_BARD": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "Defend_BARD": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "ASharp": {
+    "NAME": "A Sharp",
+    "DESCRIPTION": "Note A. NL Deal !D! damage to ALL enemies."
+  },
+  "BFlat": {
+    "NAME": "B Flat",
+    "DESCRIPTION": "Note B. NL Gain !B! Block."
+  },
+  "CMajor": {
+    "NAME": "C Major",
+    "DESCRIPTION": "Note C. NL Gain [R] and draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Note C. NL Gain [R] and draw !M! card."
+  },
+  "UpbeatBeatup": {
+    "NAME": "Upbeat Beatup",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Happy."
+  },
+  "GotTheBlues": {
+    "NAME": "Got the Blues",
+    "DESCRIPTION": "Double target enemy's Sadness.",
+    "UPGRADE_DESCRIPTION": "Triple target enemy's Sadness."
+  },
+  "InvertedMinor": {
+    "NAME": "InvertedMinor",
+    "DESCRIPTION": "Each enemy gains X Sadness.",
+    "UPGRADE_DESCRIPTION": "Each enemy gains X +1 Sadness."
+  },
+  "Conduct": {
+    "NAME": "Conduct",
+    "DESCRIPTION": "Note C. Draw !M! cards."
+  },
+  "Jam": {
+    "NAME": "Jam",
+    "DESCRIPTION": "Note A.NL Deal !D! damage. Gain !B! block. NL Gain !M! Harmony."
+  },
+  "CMinor": {
+    "NAME": "C Minor",
+    "DESCRIPTION": "Note C. NL Apply 1 Sadness.",
+    "UPGRADE_DESCRIPTION": "Note C. NL Apply 1 Sadness. NL Gain [R]."
+  },
+  "TripleTime": {
+    "NAME": "Triple Time",
+    "DESCRIPTION": "Whenever you play a card that costs 2 or more, gain [R]."
+  }
+}
