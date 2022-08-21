@@ -1,14 +1,12 @@
 package bardmod.bard.cards;
 
 import bardmod.BardMod;
+import bardmod.bard.BardCardTags;
 import bardmod.bard.BardColor;
-import bardmod.bard.powers.HappyPower;
 import bardmod.bard.powers.HarmonyPower;
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -35,6 +33,8 @@ public class Jam extends CustomCard {
         this.baseDamage = ATTACK_DMG;
         this.baseBlock = BLOCK;
         this.baseMagicNumber = HARMONY;
+
+        tags.add(BardCardTags.NOTE_A);
     }
 
     @Override

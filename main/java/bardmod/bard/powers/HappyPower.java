@@ -3,7 +3,6 @@ package bardmod.bard.powers;
 
 import bardmod.BardMod;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -53,12 +52,11 @@ public class HappyPower
             this.justApplied = false;
             return;
         }
-        flash();
 
         if (this.amount == 0) {
-            addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner, this.owner, "Happy"));
+            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "Happy"));
         } else {
-            addToBot((AbstractGameAction)new ReducePowerAction(this.owner, this.owner, "Happy", 1));
+            addToBot(new ReducePowerAction(this.owner, this.owner, "Happy", 1));
         }
 /*    */   }
 }

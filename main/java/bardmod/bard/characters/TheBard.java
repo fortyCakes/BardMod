@@ -9,11 +9,9 @@ import java.util.ArrayList;
 
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpineAnimation;
-import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
-import com.esotericsoftware.spine.AnimationState;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -30,8 +28,6 @@ public class TheBard extends CustomPlayer {
     public static final String MY_CHARACTER_SHOULDER_2 = BardMod.makePath("char/shoulder2"); // campfire pose
     public static final String MY_CHARACTER_SHOULDER_1 = BardMod.makePath("char/shoulder"); // another campfire pose
     public static final String MY_CHARACTER_CORPSE = BardMod.makePath("char/corpse"); // dead corpse
-    public static final String MY_CHARACTER_SKELETON_ATLAS = BardMod.makePath("char/skeleton.atlas"); // spine animation atlas
-    public static final String MY_CHARACTER_SKELETON_JSON = BardMod.makePath("char/skeleton.json"); // spine animation json
 
     public static final String[] ORB_TEXTURES = {BardMod.makePath("orb/bard_orb")};
     public static final String ORB_VFX = BardMod.makePath("orb/bard_orb_vfx.png");
@@ -71,6 +67,7 @@ public class TheBard extends CustomPlayer {
         startingDeck.add(ASharp.ID);
         startingDeck.add(BFlat.ID);
         startingDeck.add(CMajor.ID);
+        startingDeck.add(SteelScale.ID);
         return startingDeck;
     }
 

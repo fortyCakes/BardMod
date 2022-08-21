@@ -24,7 +24,7 @@ public class CMajor extends CustomCard {
     private static final int UPGRADE_PLUS_CARD_DRAW = 1;
 
     public CMajor() {
-        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.BASIC, CardTarget.SELF);
+        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.BASIC, CardTarget.NONE);
 
         this.baseMagicNumber = CARD_DRAW;
 

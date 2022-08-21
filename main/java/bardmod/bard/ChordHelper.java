@@ -1,6 +1,7 @@
 package bardmod.bard;
 
 import bardmod.bard.powers.ChordPower;
+import bardmod.bard.powers.HarmonyPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -9,7 +10,6 @@ import com.megacrit.cardcrawl.cards.CardQueueItem;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class ChordHelper {
 
@@ -18,6 +18,8 @@ public class ChordHelper {
         if (card.purgeOnUse) return;
 
         boolean cardUsedAsNote = false;
+
+        //noinspection ConstantConditions
         if (!cardUsedAsNote && card.hasTag(BardCardTags.NOTE_A)){
             cardUsedAsNote = tryAddNoteA(card);
         }
@@ -39,23 +41,29 @@ public class ChordHelper {
 
         if (chord.ChordComplete())
         {
-            CopyAndPlayCard(chord.CardA);
-            CopyAndPlayCard(chord.CardB);
             CopyAndPlayCard(chord.CardC);
+            CopyAndPlayCard(chord.CardB);
+            CopyAndPlayCard(chord.CardA);
             AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, ChordPower.POWER_ID));
         }
     }
 
     private static void CopyAndPlayCard(AbstractCard card) {
-        AbstractMonster m = null;
+        AbstractMonster m = AbstractDungeon.getRandomMonster();
 
-        /*if (action.target != null) {
-            m = (AbstractMonster)action.target;
-        }*/
-
-        m = AbstractDungeon.getRandomMonster();
+        int harmonyAmount = 0;
+        HarmonyPower harmony = (HarmonyPower) AbstractDungeon.player.getPower(HarmonyPower.POWER_ID);
+        if (harmony != null)
+        {
+            harmonyAmount = harmony.amount;
+        }
 
         AbstractCard tmp = card.makeSameInstanceOf();
+        tmp.baseDamage += harmonyAmount;
+        tmp.baseBlock += harmonyAmount;
+
+        tmp.tags.add(BardCardTags.IS_CHORD);
+
         AbstractDungeon.player.limbo.addToBottom(tmp);
         tmp.current_x = card.current_x;
         tmp.current_y = card.current_y;
@@ -90,7 +98,6 @@ public class ChordHelper {
             AbstractGameAction giveChord = new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ChordPower(AbstractDungeon.player));
             giveChord.update();
         }
-        ChordPower chord = (ChordPower) AbstractDungeon.player.getPower(ChordPower.POWER_ID);
-        return chord;
+        return (ChordPower) AbstractDungeon.player.getPower(ChordPower.POWER_ID);
     }
 }

@@ -3,13 +3,8 @@ package bardmod.bard.powers;
 
 import bardmod.BardMod;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
@@ -38,15 +33,15 @@ public class ChordPower
         String desc = DESCRIPTIONS[0];
 
         if (CardA != null) {
-            desc = desc + " Note A: " + CardA.name;
+            desc = desc + " NL #yNote #yA: " + CardA.name;
         }
 
         if (CardB != null) {
-            desc = desc + " Note B: " + CardB.name;
+            desc = desc + " NL #yNote #yB: " + CardB.name;
         }
 
         if (CardC != null) {
-            desc = desc + " Note C: " + CardC.name;
+            desc = desc + " NL #yNote #yC: " + CardC.name;
         }
 
 
@@ -57,6 +52,7 @@ public class ChordPower
         if (CardA != null) return false;
         CardA = card;
         AbstractDungeon.player.limbo.addToTop(card);
+        updateDescription();
         return true;
     }
 
@@ -64,6 +60,7 @@ public class ChordPower
         if (CardB != null) return false;
         CardB = card;
         AbstractDungeon.player.limbo.addToTop(card);
+        updateDescription();
         return true;
     }
 
@@ -71,6 +68,7 @@ public class ChordPower
         if (CardC != null) return false;
         CardC = card;
         AbstractDungeon.player.limbo.addToTop(card);
+        updateDescription();
         return true;
     }
 

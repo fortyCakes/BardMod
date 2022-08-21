@@ -40,7 +40,7 @@
   },
   "Jam": {
     "NAME": "Jam",
-    "DESCRIPTION": "Note A.NL Deal !D! damage. Gain !B! block. NL Gain !M! Harmony."
+    "DESCRIPTION": "Note A. NL Deal !D! damage. Gain !B! Block. NL Gain !M! Harmony."
   },
   "CMinor": {
     "NAME": "C Minor",
@@ -50,5 +50,9 @@
   "TripleTime": {
     "NAME": "Triple Time",
     "DESCRIPTION": "Whenever you play a card that costs 2 or more, gain [R]."
+  },
+  "Strum": {
+    "NAME": "Strum",
+    "DESCRIPTION": "Deal !D! damage !M! times."
   }
 }
