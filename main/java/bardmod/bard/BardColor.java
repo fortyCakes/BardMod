@@ -9,5 +9,5 @@ public class BardColor {
     public static AbstractCard.CardColor BARD_ORANGE;
 
 
-    public static Color ORANGE_COLOR = new Color(255, 106, 0, 255);
+    public static final Color ORANGE_COLOR = new Color(255, 106, 0, 255);
 }
