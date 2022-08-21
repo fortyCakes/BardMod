@@ -88,7 +88,7 @@
   },
   "HarmonicScale": {
     "NAME": "Harmonic Scale",
-    "DESCRIPTION": "Gain !B! Block per enemy, X times. Scale: Gain !M! Block instead."
+    "DESCRIPTION": "Gain !B! Block per enemy, X times. NL Scale: Gain !B! + !M! Block instead."
   },
   "TheSilentsSaga": {
     "NAME": "The Silent's Saga",
@@ -133,7 +133,8 @@
   },
   "Bop": {
     "NAME": "Bop",
-    "DESCRIPTION": "Deal X damage, where X is the number of cards you've played this turn."
+    "DESCRIPTION": "Deal X damage, where X is the number of cards you've played this turn.",
+    "UPGRADE_DESCRIPTION": "Deal X damage to ALL enemies, where X is the number of cards you've played this turn."
   },
   "DaCapo": {
     "NAME": "DaCapo",
@@ -141,7 +142,7 @@
   },
   "Rest": {
     "NAME": "Rest",
-    "DESCRIPTION": "Gain !B! Block. Gain [R] next turn. NL End your turn. NL Scale: Gain an additional [R][R] next turn."
+    "DESCRIPTION": "Gain !B! Block. Gain [R] next turn. NL End your turn. NL Scale: Gain an additional 2 Energy next turn."
   },
   "SeizeTheMoment": {
     "NAME": "Seize the Moment",

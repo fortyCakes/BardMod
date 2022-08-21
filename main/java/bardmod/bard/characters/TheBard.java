@@ -67,7 +67,7 @@ public class TheBard extends CustomPlayer {
         startingDeck.add(ASharp.ID);
         startingDeck.add(BFlat.ID);
         startingDeck.add(CMajor.ID);
-        startingDeck.add(TheWatchersWhispers.ID);
+        startingDeck.add(Octet.ID);
         return startingDeck;
     }
 
@@ -78,8 +78,8 @@ public class TheBard extends CustomPlayer {
         return retVal;
     }
 
-    public static final int STARTING_HP = 75;
-    public static final int MAX_HP = 75;
+    public static final int STARTING_HP = 70;
+    public static final int MAX_HP = 70;
     public static final int STARTING_GOLD = 99;
     public static final int HAND_SIZE = 5;
 

@@ -18,9 +18,8 @@ public class HarmonicScale extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = -1;
     private static final int BLOCK = 3;
-    private static final int SCALE_BLOCK = 4;
+    private static final int SCALE_BLOCK = 1;
     private static final int UPGRADE_PLUS_BLOCK = 1;
-    private static final int UPGRADE_PLUS_SCALE = 1;
 
     public HarmonicScale() {
         super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.UNCOMMON, CardTarget.SELF);
@@ -39,7 +38,7 @@ public class HarmonicScale extends CustomCard {
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                 if (ScaleHelper.WasScale(energyOnUse))
                 {
-                    AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, magicNumber));
+                    AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, block + magicNumber));
                 } else {
                     AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, block));
                 }
@@ -52,7 +51,6 @@ public class HarmonicScale extends CustomCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeBlock(UPGRADE_PLUS_BLOCK);
-            upgradeMagicNumber(UPGRADE_PLUS_SCALE);
         }
     }
 }

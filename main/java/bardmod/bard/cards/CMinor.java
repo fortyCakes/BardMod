@@ -3,8 +3,9 @@ package bardmod.bard.cards;
 import bardmod.BardMod;
 import bardmod.bard.BardCardTags;
 import bardmod.bard.BardColor;
+import bardmod.bard.powers.SadnessPower;
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -26,6 +27,7 @@ public class CMinor extends CustomCard {
         super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.UNCOMMON, CardTarget.ENEMY);
 
         this.baseMagicNumber = ENERGY_GAIN;
+        this.magicNumber = baseMagicNumber;
 
         tags.add(BardCardTags.NOTE_C);
     }
@@ -43,7 +45,7 @@ public class CMinor extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new SadnessPower(p, 1), 1));
         if (upgraded) {
             AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(ENERGY_GAIN));
         }

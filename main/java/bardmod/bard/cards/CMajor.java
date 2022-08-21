@@ -27,6 +27,7 @@ public class CMajor extends CustomCard {
         super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.BASIC, CardTarget.NONE);
 
         this.baseMagicNumber = CARD_DRAW;
+        this.magicNumber = baseMagicNumber;
 
         tags.add(BardCardTags.NOTE_C);
     }

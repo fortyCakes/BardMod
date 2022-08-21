@@ -28,7 +28,6 @@ public class HappyPower
         this.amount = amount;
         this.updateDescription();
         this.img = new Texture(BardMod.makePowerImagePath(POWER_ID));
-        this.justApplied = true;
     }
 
     public void playApplyPowerSfx() {
@@ -48,15 +47,11 @@ public class HappyPower
     }
 
     public void atEndOfTurn(boolean isPlayer) {
-        if (this.justApplied) {
-            this.justApplied = false;
-            return;
-        }
 
         if (this.amount == 0) {
-            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "Happy"));
+            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, HappyPower.POWER_ID));
         } else {
-            addToBot(new ReducePowerAction(this.owner, this.owner, "Happy", 1));
+            addToBot(new ReducePowerAction(this.owner, this.owner, HappyPower.POWER_ID, 1));
         }
-/*    */   }
+   }
 }

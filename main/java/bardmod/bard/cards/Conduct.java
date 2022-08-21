@@ -3,13 +3,10 @@ package bardmod.bard.cards;
 import bardmod.BardMod;
 import bardmod.bard.BardCardTags;
 import bardmod.bard.BardColor;
-import bardmod.bard.actions.unique.DoubleSadAction;
-import bardmod.bard.actions.unique.TripleSadAction;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -23,14 +20,15 @@ public class Conduct extends CustomCard {
     private static final int UPGRADE_PLUS_DRAW_CARDS = 1;
 
     public Conduct() {
-        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.COMMON, CardTarget.NONE);
         tags.add(BardCardTags.NOTE_C);
         this.baseMagicNumber = DRAW_CARDS;
+        this.magicNumber = baseMagicNumber;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, draw));
+         addToBot(new DrawCardAction(p, magicNumber));
     }
 
     @Override

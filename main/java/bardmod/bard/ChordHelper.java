@@ -2,6 +2,7 @@ package bardmod.bard;
 
 import bardmod.bard.powers.ArpeggioPower;
 import bardmod.bard.powers.ChordPower;
+import bardmod.bard.powers.DaCapoPower;
 import bardmod.bard.powers.HarmonyPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -60,11 +61,25 @@ public class ChordHelper {
 
         if (chord.ChordComplete())
         {
-            CopyAndPlayCard(chord.CardC, 1);
-            CopyAndPlayCard(chord.CardB, 2);
-            CopyAndPlayCard(chord.CardA, 3);
+            PlayChordCards(chord);
+
+            if (AbstractDungeon.player.hasPower(DaCapoPower.POWER_ID))
+            {
+                int daCapo = AbstractDungeon.player.getPower(DaCapoPower.POWER_ID).amount;
+                for (int i = 0; i < daCapo; i++)
+                {
+                    PlayChordCards(chord);
+                }
+            }
+
             AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, ChordPower.POWER_ID));
         }
+    }
+
+    private static void PlayChordCards(ChordPower chord) {
+        CopyAndPlayCard(chord.CardC, 1);
+        CopyAndPlayCard(chord.CardB, 2);
+        CopyAndPlayCard(chord.CardA, 3);
     }
 
     private static void CopyAndPlayCard(AbstractCard card, int cardIndex) {
@@ -85,7 +100,7 @@ public class ChordHelper {
 
         AbstractDungeon.player.limbo.addToBottom(tmp);
         tmp.current_x = card.current_x;
-        tmp.current_y = card.current_y + 100.0F * Settings.scale * cardIndex;
+        tmp.current_y = card.current_y + 200.0F * Settings.scale * cardIndex;
         tmp.target_x = Settings.WIDTH / 2.0F - 300.0F * Settings.scale;
         tmp.target_y = Settings.HEIGHT / 2.0F;
         if (m != null) {
@@ -93,23 +108,21 @@ public class ChordHelper {
         }
         tmp.purgeOnUse = true;
         AbstractDungeon.actionManager.addCardQueueItem(new CardQueueItem(tmp, m, card.energyOnUse, true, true), true);
-
-        AbstractDungeon.player.discardPile.addToTop(card);
     }
 
     private static boolean tryAddNoteA(AbstractCard abstractCard) {
         ChordPower chord = ensureChordPowerExists();
-        return chord.SetNoteA(abstractCard);
+        return chord.SetNoteA(abstractCard.makeSameInstanceOf());
     }
 
     private static boolean tryAddNoteB(AbstractCard abstractCard) {
         ChordPower chord = ensureChordPowerExists();
-        return chord.SetNoteB(abstractCard);
+        return chord.SetNoteB(abstractCard.makeSameInstanceOf());
     }
 
     private static boolean tryAddNoteC(AbstractCard abstractCard) {
         ChordPower chord = ensureChordPowerExists();
-        return chord.SetNoteC(abstractCard);
+        return chord.SetNoteC(abstractCard.makeSameInstanceOf());
     }
 
     private static ChordPower ensureChordPowerExists() {

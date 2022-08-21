@@ -23,6 +23,7 @@ public class LeadIn extends CustomCard {
     public LeadIn() {
         super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.COMMON, CardTarget.SELF);
         this.baseMagicNumber = VIGOR;
+        this.magicNumber = baseMagicNumber;
 
         tags.add(BardCardTags.NOTE_A);
     }
