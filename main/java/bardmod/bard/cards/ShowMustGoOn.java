@@ -21,7 +21,7 @@ public class ShowMustGoOn extends CustomCard {
 
 
     public ShowMustGoOn() {
-        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.POWER, BardColor.BARD_ORANGE, CardRarity.RARE, CardTarget.SELF);
     }
 
     @Override

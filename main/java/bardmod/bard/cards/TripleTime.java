@@ -1,13 +1,10 @@
 package bardmod.bard.cards;
 
 import bardmod.BardMod;
-import bardmod.bard.BardCardTags;
 import bardmod.bard.BardColor;
 import bardmod.bard.powers.TripleTimePower;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -25,7 +22,7 @@ public class TripleTime extends CustomCard {
     private static final int ENERGY_GAIN = 1;
 
     public TripleTime() {
-        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.POWER, BardColor.BARD_ORANGE, CardRarity.RARE, CardTarget.SELF);
 
         this.baseMagicNumber = ENERGY_GAIN;
     }
