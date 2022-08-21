@@ -25,7 +25,7 @@ public class Strum extends CustomCard {
         super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK, BardColor.BARD_ORANGE, CardRarity.UNCOMMON, CardTarget.ENEMY);
 
         this.baseDamage = ATTACK_DMG;
-        this.magicNumber = ATTACK_TIMES;
+        this.baseMagicNumber = ATTACK_TIMES;
     }
 
     @Override

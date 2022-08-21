@@ -54,5 +54,26 @@
   "Strum": {
     "NAME": "Strum",
     "DESCRIPTION": "Deal !D! damage !M! times."
+  },
+  "SteelScale": {
+    "NAME": "Steel Scale",
+    "DESCRIPTION": "Gain !B! Block. NL Scale: Gain !M! Block."
+  },
+  "DrumBeat": {
+    "NAME": "Drum Beat",
+    "DESCRIPTION": "Deal !D! damage. NL Scale: Gain [R]."
+  },
+  "ShowMustGoOn": {
+    "NAME": "The Show Must Go On",
+    "DESCRIPTION": "Whenever you receive unblocked damage, gain 1 Happy.",
+    "UPGRADE_DESCRIPTION": "Whenever you receive unblocked damage, gain 1 Happy. NL The attacking enemy gains 1 Sadness."
+  },
+  "Twang": {
+    "NAME": "Twang",
+    "DESCRIPTION": "Note A. NL Deal !D! damage."
+  },
+  "Feedback": {
+    "NAME": "Feedback",
+    "DESCRIPTION": "Apply !M! Sad, Weak and Vulnerable to ALL enemies."
   }
 }

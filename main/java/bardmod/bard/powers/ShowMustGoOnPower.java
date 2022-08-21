@@ -3,24 +3,23 @@ package bardmod.bard.powers;
 
 import bardmod.BardMod;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class TripleTimePower
+public class ShowMustGoOnPower
         extends AbstractPower {
-    public static final String POWER_ID = "TripleTimePower";
-    public static final String NAME = "Triple Time";
+    public static final String POWER_ID = "ShowMustGoOnPower";
+    public static final String NAME = "The Show Must Go On";
     public static final String[] DESCRIPTIONS =  new String[]{
-            "Whenever you play a card that costs 2 or more, gain [R]."
+            "Whenever you take unblocked damage, gain a Happy."
     };
 
 
-    public TripleTimePower(AbstractCreature owner, int amount) {
+    public ShowMustGoOnPower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
@@ -38,9 +37,12 @@ public class TripleTimePower
         this.description = DESCRIPTIONS[0];
     }
 
-    public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (!card.freeToPlayOnce && card.costForTurn >= 2) {
-            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(amount));
+    public int onAttacked(DamageInfo info, int damageAmount) {
+        if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new HappyPower(this.owner, this.amount), this.amount));
         }
+
+        return damageAmount;
     }
 }
+

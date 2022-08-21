@@ -67,7 +67,7 @@ public class TheBard extends CustomPlayer {
         startingDeck.add(ASharp.ID);
         startingDeck.add(BFlat.ID);
         startingDeck.add(CMajor.ID);
-        startingDeck.add(SteelScale.ID);
+        startingDeck.add(UpbeatBeatup.ID);
         return startingDeck;
     }
 

@@ -13,17 +13,15 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class SteelScale extends CustomCard {
     public static final String ID = "SteelScale";
-    public static final String NAME = "SteelScale";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 0;
     private static final int BLOCK = 3;
     private static final int ADDITIONAL_BLOCK = 3;
 
     public SteelScale() {
-        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
-                BardColor.BARD_ORANGE, CardRarity.BASIC,
-                CardTarget.SELF);
+        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.COMMON, CardTarget.SELF);
 
         this.baseBlock = BLOCK;
         this.baseMagicNumber = ADDITIONAL_BLOCK;
@@ -39,11 +37,7 @@ public class SteelScale extends CustomCard {
     }
 
     public void triggerOnGlowCheck() {
-        if (ScaleHelper.WillScale(cost)){
-            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
-        } else {
-            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        }
+        ScaleHelper.GlowCheck(this);
     }
 
     public AbstractCard makeCopy() {
