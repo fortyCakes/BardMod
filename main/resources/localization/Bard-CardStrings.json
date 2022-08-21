@@ -18,7 +18,7 @@
   "CMajor": {
     "NAME": "C Major",
     "DESCRIPTION": "Note C. NL Gain [R] and draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Note C. NL Gain [R] and draw !M! card."
+    "UPGRADE_DESCRIPTION": "Note C. NL Gain [R] and draw !M! cards."
   },
   "UpbeatBeatup": {
     "NAME": "Upbeat Beatup",
@@ -75,5 +75,92 @@
   "Feedback": {
     "NAME": "Feedback",
     "DESCRIPTION": "Apply !M! Sad, Weak and Vulnerable to ALL enemies. NL Exhaust."
+  },
+  "Resonance": {
+    "NAME": "Resonance",
+    "DESCRIPTION": "Deal damage to each enemy equal to its amount of debuffs. NL Gain Block equal to your amount of buffs.",
+    "UPGRADE_DESCRIPTION": "Deal damage to each enemy equal to its amount of debuffs + 2. NL Gain Block equal to your amount of buffs + 2."
+  },
+  "RoarOfTheCrowd": {
+    "NAME": "Roar of the Crowd",
+    "DESCRIPTION": "Whenever you play a chord, gain 1 Happy.",
+    "UPGRADE_DESCRIPTION": "Whenever you play a chord, gain 1 Happy per enemy."
+  },
+  "HarmonicScale": {
+    "NAME": "Harmonic Scale",
+    "DESCRIPTION": "Gain !B! Block per enemy, X times. Scale: Gain !M! Block instead."
+  },
+  "TheSilentsSaga": {
+    "NAME": "The Silent's Saga",
+    "DESCRIPTION": "Draw a card, then discard a card. NL Add a Shiv to your hand. NL Apply 3 Poison to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Draw a card, then discard a card. NL Add a Shiv to your hand. NL Apply 3 Poison and Weak to ALL enemies."
+  },
+  "TheWatchersWhispers": {
+    "NAME": "The Watcher's Whispers",
+    "DESCRIPTION": "Enter Calm or Wrath. Exit your stance at the start of your next turn.",
+    "UPGRADE_DESCRIPTION": "Enter Calm or Wrath. Exit your stance at the start of your next turn. NL Add a Miracle to your hand."
+  },
+  "TheDefectsDrama": {
+    "NAME": "The Defect's Drama",
+    "DESCRIPTION": "Add a Defect Power card to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add a Defect Power card to your hand. It costs 0 this turn. NL Exhaust."
+  },
+  "TheBardsLament": {
+    "NAME": "The Bard's Lament",
+    "DESCRIPTION": "Add a Story card to your hand. It costs 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add an upgraded Story card to your hand. It costs 0 this turn. NL Exhaust."
+  },
+  "TheNarrativeOfNeow": {
+    "NAME": "The Narrative of Neow",
+    "DESCRIPTION": "If you die, return to life with !M!% of your HP."
+  },
+  "LayeredMelody": {
+    "NAME": "Layered Melody",
+    "DESCRIPTION": "Note B. NL Gain !B! Block and !M! Plated Armor."
+  },
+  "LeadIn": {
+    "NAME": "Lead-In",
+    "DESCRIPTION": "Note A. NL Your next attack deals !M! more damage."
+  },
+  "Arpeggio": {
+    "NAME": "Arpeggio",
+    "DESCRIPTION": "Attacks have Note A. NL Skills with Block have Note B. NL Other Skills have Note C.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Attacks have Note A. NL Skills with Block have Note B. NL Other Skills have Note C."
+  },
+  "DrumRoll": {
+    "NAME": "Drum Roll",
+    "DESCRIPTION": "Deal !D! damage. Scale: Gain 2 Happy."
+  },
+  "Bop": {
+    "NAME": "Bop",
+    "DESCRIPTION": "Deal X damage, where X is the number of cards you've played this turn."
+  },
+  "DaCapo": {
+    "NAME": "DaCapo",
+    "DESCRIPTION": "Whenever you play a Chord, copy the Notes an additional time."
+  },
+  "Rest": {
+    "NAME": "Rest",
+    "DESCRIPTION": "Gain !B! Block. Gain [R] next turn. NL End your turn. NL Scale: Gain an additional [R][R] next turn."
+  },
+  "SeizeTheMoment": {
+    "NAME": "Seize the Moment",
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage. Gain !B! Block. Reduce the cost of this card by !M! this combat."
+  },
+  "Octet": {
+    "NAME": "Octet",
+    "DESCRIPTION": "Copy the next card you play 7 times, then end your turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Copy the next card you play 7 times, then end your turn."
+  },
+  "MiddleC": {
+    "NAME": "Middle C",
+    "DESCRIPTION": "Note C. NL Play the top Note A or Note B card from your deck.",
+    "UPGRADE_DESCRIPTION": "Note C. NL Play the top Note A AND the top Note B card from your deck."
+  },
+  "Chime": {
+    "NAME": "Chime",
+    "DESCRIPTION": "Note B. NL Gain !B! Block. NL Draw a card.",
+    "UPGRADE_DESCRIPTION": "Note B. NL Gain !B! Block. NL Draw two cards."
   }
+
 }

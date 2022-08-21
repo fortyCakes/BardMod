@@ -1,5 +1,6 @@
 package bardmod.bard;
 
+import bardmod.bard.powers.ArpeggioPower;
 import bardmod.bard.powers.ChordPower;
 import bardmod.bard.powers.HarmonyPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -19,6 +20,8 @@ public class ChordHelper {
 
         boolean cardUsedAsNote = false;
 
+        boolean hasArpeggio = AbstractDungeon.player.hasPower(ArpeggioPower.POWER_ID);
+
         //noinspection ConstantConditions
         if (!cardUsedAsNote && card.hasTag(BardCardTags.NOTE_A)){
             cardUsedAsNote = tryAddNoteA(card);
@@ -28,6 +31,22 @@ public class ChordHelper {
         }
         if (!cardUsedAsNote && card.hasTag(BardCardTags.NOTE_C)){
             cardUsedAsNote = tryAddNoteC(card);
+        }
+
+        if (hasArpeggio)
+        {
+            if (!cardUsedAsNote && card.type == AbstractCard.CardType.ATTACK)
+            {
+                cardUsedAsNote = tryAddNoteA(card);
+            }
+            if (!cardUsedAsNote && card.type == AbstractCard.CardType.SKILL && card.baseBlock > 0)
+            {
+                cardUsedAsNote = tryAddNoteB(card);
+            }
+            if (!cardUsedAsNote && card.type == AbstractCard.CardType.SKILL && card.baseBlock <= 0)
+            {
+                cardUsedAsNote = tryAddNoteC(card);
+            }
         }
 
         if (cardUsedAsNote) {
@@ -41,14 +60,14 @@ public class ChordHelper {
 
         if (chord.ChordComplete())
         {
-            CopyAndPlayCard(chord.CardC);
-            CopyAndPlayCard(chord.CardB);
-            CopyAndPlayCard(chord.CardA);
+            CopyAndPlayCard(chord.CardC, 1);
+            CopyAndPlayCard(chord.CardB, 2);
+            CopyAndPlayCard(chord.CardA, 3);
             AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, ChordPower.POWER_ID));
         }
     }
 
-    private static void CopyAndPlayCard(AbstractCard card) {
+    private static void CopyAndPlayCard(AbstractCard card, int cardIndex) {
         AbstractMonster m = AbstractDungeon.getRandomMonster();
 
         int harmonyAmount = 0;
@@ -66,7 +85,7 @@ public class ChordHelper {
 
         AbstractDungeon.player.limbo.addToBottom(tmp);
         tmp.current_x = card.current_x;
-        tmp.current_y = card.current_y;
+        tmp.current_y = card.current_y + 100.0F * Settings.scale * cardIndex;
         tmp.target_x = Settings.WIDTH / 2.0F - 300.0F * Settings.scale;
         tmp.target_y = Settings.HEIGHT / 2.0F;
         if (m != null) {
