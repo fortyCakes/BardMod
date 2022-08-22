@@ -78,8 +78,8 @@
   },
   "Resonance": {
     "NAME": "Resonance",
-    "DESCRIPTION": "Deal damage to each enemy equal to its amount of debuffs. NL Gain Block equal to your amount of buffs.",
-    "UPGRADE_DESCRIPTION": "Deal damage to each enemy equal to its amount of debuffs + 2. NL Gain Block equal to your amount of buffs + 2."
+    "DESCRIPTION": "Deal damage to each enemy equal to its amount of Debuffs. NL Gain Block equal to your amount of Buffs.",
+    "UPGRADE_DESCRIPTION": "Deal damage to each enemy equal to its amount of Debuffs + 2. NL Gain Block equal to your amount of Buffs + 2."
   },
   "RoarOfTheCrowd": {
     "NAME": "Roar of the Crowd",
@@ -215,5 +215,34 @@
   "SonicShield": {
     "NAME": "Sonic Shield",
     "DESCRIPTION": "Note B. NL Gain !B! Block."
+  },
+  "TaleCollector": {
+    "NAME": "Tale Collector",
+    "DESCRIPTION": "Deal !D! +X damage, where X is the number of ? Rooms you've visited.",
+    "UPGRADE_DESCRIPTION": "Note A. NL Deal !D! +X damage, where X is the number of ? Rooms you've visited."
+  },
+  "OneManBand": {
+    "NAME": "One Man Band",
+    "DESCRIPTION": "Exhaust ALL Strikes and Defends from your draw and discard piles. NL Shuffle 8 random common cards into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Exhaust ALL Strikes and Defends from your draw and discard piles. NL Shuffle 8 random common or uncommon cards into your draw pile. NL Exhaust."
+  },
+  "Lente": {
+    "NAME": "Lente",
+    "DESCRIPTION": "Apply 1 Slow until end of turn.",
+    "UPGRADE_DESCRIPTION": "Apply 1 Slow. NL Exhaust."
+  },
+  "Octave": {
+    "NAME": "Octave",
+    "DESCRIPTION": "Deal !D! damage. NL If this is the 8th card played this turn, deal 10 times as much damage.",
+    "UPGRADE_DESCRIPTION": "Note A. NL Deal !D! damage. NL If this is the 8th card played this turn, deal 10 times as much damage."
+  },
+  "Chorus": {
+    "NAME": "Chorus",
+    "DESCRIPTION": "Exhaust a card from your hand. Copy that card at the start of each turn."
+  },
+  "Pluck": {
+    "NAME": "Pluck",
+    "DESCRIPTION": "Put a Note card from your draw or discard pile into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Put two Note cards from your draw or discard pile into your hand. NL Exhaust."
   }
 }
