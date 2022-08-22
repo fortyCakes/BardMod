@@ -26,7 +26,6 @@ public class Rest extends CustomCard {
         super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.COMMON, CardTarget.SELF);
 
         this.baseBlock = BLOCK;
-        this.exhaust = true;
     }
 
     public void triggerOnGlowCheck() {

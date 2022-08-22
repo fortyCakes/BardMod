@@ -30,6 +30,9 @@ public class SeizeTheMoment extends CustomCard {
         super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK, BardColor.BARD_ORANGE, CardRarity.UNCOMMON, CardTarget.ENEMY);
 
         this.baseDamage = ATTACK_DMG;
+        this.baseBlock = BLOCK;
+        this.baseMagicNumber = COST_REDUCTION;
+        this.magicNumber = baseMagicNumber;
         this.isEthereal = true;
     }
 

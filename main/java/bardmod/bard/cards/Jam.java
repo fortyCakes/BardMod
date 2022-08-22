@@ -33,6 +33,7 @@ public class Jam extends CustomCard {
         this.baseDamage = ATTACK_DMG;
         this.baseBlock = BLOCK;
         this.baseMagicNumber = HARMONY;
+        this.magicNumber = baseMagicNumber;
 
         tags.add(BardCardTags.NOTE_A);
     }
