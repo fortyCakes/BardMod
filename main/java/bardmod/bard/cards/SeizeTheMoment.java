@@ -20,7 +20,7 @@ public class SeizeTheMoment extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 2;
-    private static final int ATTACK_DMG = 20;
+    private static final int ATTACK_DMG = 15;
     private static final int BLOCK = 10;
     private static final int UPGRADE_PLUS_DMG = 5;
     private static final int UPGRADE_PLUS_BLOCK = 5;

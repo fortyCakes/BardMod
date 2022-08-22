@@ -3,9 +3,9 @@ package bardmod.bard.cards;
 import bardmod.BardMod;
 import bardmod.bard.BardCardTags;
 import bardmod.bard.BardColor;
+import bardmod.bard.actions.unique.PlayCardFromDeckAction;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardQueueItem;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -30,6 +30,7 @@ public class MiddleC extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        m = AbstractDungeon.getCurrRoom().monsters.getRandomMonster();
         int deckSize = p.drawPile.size();
         AbstractCard CardA = null; AbstractCard CardB = null;
 
@@ -46,34 +47,32 @@ public class MiddleC extends CustomCard {
 
         if (CardA == null && CardB != null)
         {
-            PlayCard(CardB);
+            PlayCard(CardB, m);
         }
         if (CardB == null && CardA != null)
         {
-            PlayCard(CardA);
+            PlayCard(CardA, m);
         }
         if (CardA != null && CardB != null)
         {
             if (upgraded) {
-                PlayCard(CardA);
-                PlayCard(CardB);
+                PlayCard(CardA, m);
+                PlayCard(CardB, m);
             }
             else if (AbstractDungeon.cardRandomRng.randomBoolean()) {
-                PlayCard(CardA);
+                PlayCard(CardA, m);
             }
             else {
-                PlayCard(CardB);
+                PlayCard(CardB, m);
             }
 
         }
 
     }
 
-    private static void PlayCard(AbstractCard card) {
+    private static void PlayCard(AbstractCard card, AbstractMonster m) {
         // TODO make this work properly - e.g. PlayTopCardAction.
-        AbstractMonster m;
-        m = AbstractDungeon.getRandomMonster();
-        AbstractDungeon.actionManager.addCardQueueItem(new CardQueueItem(card, m), true);
+        AbstractDungeon.actionManager.addToBottom(new PlayCardFromDeckAction(m, card));
     }
 
     @Override

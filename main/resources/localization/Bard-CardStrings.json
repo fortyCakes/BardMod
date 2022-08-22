@@ -192,6 +192,10 @@
     "NAME": "Subliminal Tones",
     "DESCRIPTION": "At the start of your turn, apply !M! Puppet to ALL enemies."
   },
+  "ShatteringNote": {
+    "NAME": "Shattering Note",
+    "DESCRIPTION": "Apply 1 Puppet, then deal !D! damage. NL Damage is increased by the amount of Puppet the enemy has."
+  },
   "WallOfSound": {
     "NAME": "Wall of Sound",
     "DESCRIPTION": "Gain !B! Block. Apply !M! Puppet to ALL enemies. Then gain X block, where X is the amount of Puppet among ALL enemies."
@@ -223,8 +227,8 @@
   },
   "OneManBand": {
     "NAME": "One Man Band",
-    "DESCRIPTION": "Exhaust ALL Strikes and Defends from your draw and discard piles. NL Shuffle 8 random common cards into your draw pile. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Exhaust ALL Strikes and Defends from your draw and discard piles. NL Shuffle 8 random common or uncommon cards into your draw pile. NL Exhaust."
+    "DESCRIPTION": "Exhaust ALL Strikes and Defends. NL Shuffle 8 random common cards into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Exhaust ALL Strikes and Defends. NL Shuffle 8 random cards of any rarity into your draw pile. NL Exhaust."
   },
   "Lente": {
     "NAME": "Lente",
