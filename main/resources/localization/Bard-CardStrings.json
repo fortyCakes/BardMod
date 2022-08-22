@@ -162,6 +162,58 @@
     "NAME": "Chime",
     "DESCRIPTION": "Note B. NL Gain !B! Block. NL Draw a card.",
     "UPGRADE_DESCRIPTION": "Note B. NL Gain !B! Block. NL Draw two cards."
+  },
+  "TollTheBell": {
+    "NAME": "Toll the Bell",
+    "DESCRIPTION": "Note A. NL Deal !D! damage.",
+  },
+  "Sforzando": {
+    "NAME": "Sforzando",
+    "DESCRIPTION": "Note C. NL Gain [R] [R].",
+    "UPGRADE_DESCRIPTION": "Note C. NL Gain [R] [R] [R]."
+  },
+  "GoWithTheFlow": {
+    "NAME": "Go with the Flow",
+    "DESCRIPTION": "When you Scale, gain !M! Happy."
+  },
+  "ViciousMockery": {
+    "NAME": "Vicious Mockery",
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Sadness."
+  },
+  "PullTheStrings": {
+    "NAME": "Pull the Strings",
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Puppet."
+  },
+  "PleadForMercy": {
+    "NAME": "Plead for Mercy",
+    "DESCRIPTION": "Gain !B! Block. Whenever an enemy attacks you this turn, they gain !M! Puppet."
+  },
+  "SubliminalTones": {
+    "NAME": "Subliminal Tones",
+    "DESCRIPTION": "At the start of your turn, apply !M! Puppet to ALL enemies."
+  },
+  "WallOfSound": {
+    "NAME": "Wall of Sound",
+    "DESCRIPTION": "Gain !B! Block. Apply !M! Puppet to ALL enemies. Then gain X block, where X is the amount of Puppet among ALL enemies."
+  },
+  "PuppetShow": {
+    "NAME": "Puppet Show",
+    "DESCRIPTION": "Note C. NL Apply !M! Puppet to ALL enemies, and 6 extra Puppet to Minions."
+  },
+  "Dance": {
+    "NAME": "Dance",
+    "DESCRIPTION": "Whenever you Scale, apply !M! Puppet to ALL enemies."
+  },
+  "DiscordantScreech": {
+    "NAME": "Discordant Screech",
+    "DESCRIPTION": "Note A. NL Deal !D! damage to ALL enemies."
+  },
+  "Compose": {
+    "NAME": "Compose",
+    "DESCRIPTION": "Note B. NL ALL enemies lose !M! Strength this turn. NL Scale: They lose an additional 2 Strength this turn."
+  },
+  "SonicShield": {
+    "NAME": "Sonic Shield",
+    "DESCRIPTION": "Note B. NL Gain !B! Block."
   }
-
 }
