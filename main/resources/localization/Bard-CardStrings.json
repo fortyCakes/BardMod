@@ -213,7 +213,11 @@
     "DESCRIPTION": "Note A. NL Deal !D! damage to ALL enemies."
   },
   "Compose": {
-    "NAME": "Compose",
+  "NAME": "Compose",
+  "DESCRIPTION": "Note B. NL Gain !B! Block. Gain [R]."
+},
+  "PiercingChime": {
+    "NAME": "Piercing Chime",
     "DESCRIPTION": "Note B. NL ALL enemies lose !M! Strength this turn. NL Scale: They lose an additional 2 Strength this turn."
   },
   "SonicShield": {
