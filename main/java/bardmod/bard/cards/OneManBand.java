@@ -83,6 +83,8 @@ public class OneManBand extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 }
