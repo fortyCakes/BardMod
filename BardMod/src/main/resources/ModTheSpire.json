@@ -1,0 +1,10 @@
+{
+  "modid": "BardClassModId",
+  "name": "Bard Class",
+  "author_list": ["Alex Stuart"],
+  "credits": "& Adrian Earle",
+  "description": "Adds Bard class to Slay the Spire",
+  "version": "0.1",
+  "sts_version": "06-15-2018",
+  "mts_version": "2.7.0"
+}

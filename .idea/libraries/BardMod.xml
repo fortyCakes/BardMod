@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="BardMod">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/BaseMod.jar!/" />
+      <root url="jar://$PROJECT_DIR$/desktop-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ModTheSpire.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

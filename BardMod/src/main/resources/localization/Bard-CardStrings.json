@@ -1,0 +1,271 @@
+{
+  "Strike_BARD": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "Defend_BARD": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "ASharp": {
+    "NAME": "A Sharp",
+    "DESCRIPTION": "Note A. NL Deal !D! damage to ALL enemies."
+  },
+  "BFlat": {
+    "NAME": "B Flat",
+    "DESCRIPTION": "Note B. NL Gain !B! Block."
+  },
+  "CMajor": {
+    "NAME": "C Major",
+    "DESCRIPTION": "Note C. NL Gain [R] and draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Note C. NL Gain [R] and draw !M! cards."
+  },
+  "UpbeatBeatup": {
+    "NAME": "Upbeat Beatup",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Happy."
+  },
+  "GotTheBlues": {
+    "NAME": "Got the Blues",
+    "DESCRIPTION": "Double target enemy's Sadness.",
+    "UPGRADE_DESCRIPTION": "Triple target enemy's Sadness."
+  },
+  "InvertedMinor": {
+    "NAME": "InvertedMinor",
+    "DESCRIPTION": "Each enemy gains X Sadness.",
+    "UPGRADE_DESCRIPTION": "Each enemy gains X +1 Sadness."
+  },
+  "Conduct": {
+    "NAME": "Conduct",
+    "DESCRIPTION": "Note C. Draw !M! cards."
+  },
+  "Jam": {
+    "NAME": "Jam",
+    "DESCRIPTION": "Note A. NL Deal !D! damage. Gain !B! Block. NL Gain !M! Harmony."
+  },
+  "CMinor": {
+    "NAME": "C Minor",
+    "DESCRIPTION": "Note C. NL Apply 1 Sadness.",
+    "UPGRADE_DESCRIPTION": "Note C. NL Apply 1 Sadness. NL Gain [R]."
+  },
+  "TripleTime": {
+    "NAME": "Triple Time",
+    "DESCRIPTION": "Whenever you play a card that costs 2 or more, gain [R]."
+  },
+  "Strum": {
+    "NAME": "Strum",
+    "DESCRIPTION": "Deal !D! damage !M! times."
+  },
+  "SteelScale": {
+    "NAME": "Steel Scale",
+    "DESCRIPTION": "Gain !B! Block. NL Scale: Gain !M! Block."
+  },
+  "DrumBeat": {
+    "NAME": "Drum Beat",
+    "DESCRIPTION": "Deal !D! damage. NL Scale: Gain [R]."
+  },
+  "ShowMustGoOn": {
+    "NAME": "The Show Must Go On",
+    "DESCRIPTION": "Whenever you receive unblocked damage, gain 1 Happy.",
+    "UPGRADE_DESCRIPTION": "Whenever you receive unblocked damage, gain 1 Happy. NL The attacking enemy gains 1 Sadness."
+  },
+  "Twang": {
+    "NAME": "Twang",
+    "DESCRIPTION": "Note A. NL Deal !D! damage."
+  },
+  "Feedback": {
+    "NAME": "Feedback",
+    "DESCRIPTION": "Apply !M! Sad, Weak and Vulnerable to ALL enemies. NL Exhaust."
+  },
+  "Resonance": {
+    "NAME": "Resonance",
+    "DESCRIPTION": "Deal damage to each enemy equal to its amount of Debuffs. NL Gain Block equal to your amount of Buffs.",
+    "UPGRADE_DESCRIPTION": "Deal damage to each enemy equal to its amount of Debuffs + 2. NL Gain Block equal to your amount of Buffs + 2."
+  },
+  "RoarOfTheCrowd": {
+    "NAME": "Roar of the Crowd",
+    "DESCRIPTION": "Whenever you play a chord, gain 1 Happy.",
+    "UPGRADE_DESCRIPTION": "Whenever you play a chord, gain 1 Happy per enemy."
+  },
+  "HarmonicScale": {
+    "NAME": "Harmonic Scale",
+    "DESCRIPTION": "Gain !B! Block per enemy, X times. NL Scale: Gain !B! + !M! Block instead."
+  },
+  "TheSilentsSaga": {
+    "NAME": "The Silent's Saga",
+    "DESCRIPTION": "Draw a card, then discard a card. NL Add a Shiv to your hand. NL Apply 3 Poison to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Draw a card, then discard a card. NL Add a Shiv to your hand. NL Apply 3 Poison and Weak to ALL enemies."
+  },
+  "TheWatchersWhispers": {
+    "NAME": "The Watcher's Whispers",
+    "DESCRIPTION": "Enter Calm or Wrath. Exit your stance at the start of your next turn.",
+    "UPGRADE_DESCRIPTION": "Enter Calm or Wrath. Exit your stance at the start of your next turn. NL Add a Miracle to your hand."
+  },
+  "TheDefectsDrama": {
+    "NAME": "The Defect's Drama",
+    "DESCRIPTION": "Gain two orb slots. NL Channel a random orb at the start of your turn.",
+    "UPGRADE_DESCRIPTION": "Gain two orb slots. NL Channel two random orbs at the start of your turn."
+  },
+  "TheIroncladsInsights": {
+    "NAME": "The Ironclad's Insights",
+    "DESCRIPTION": "Exhaust the top card of your draw pile. NL Deal !D! damage for each exhausted card.",
+    "UPGRADE_DESCRIPTION": "Choose and exhaust a card from your draw pile. NL Deal !D! damage for each exhausted card."
+  },
+  "TheBardsLament": {
+    "NAME": "The Bard's Lament",
+    "DESCRIPTION": "Add a Story card to your hand. It costs 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add an upgraded Story card to your hand. It costs 0 this turn. NL Exhaust."
+  },
+  "TheNarrativeOfNeow": {
+    "NAME": "The Narrative of Neow",
+    "DESCRIPTION": "If you die, return to life with !M!% of your HP."
+  },
+  "LayeredMelody": {
+    "NAME": "Layered Melody",
+    "DESCRIPTION": "Note B. NL Gain !B! Block and !M! Plated Armor."
+  },
+  "LeadIn": {
+    "NAME": "Lead-In",
+    "DESCRIPTION": "Note A. NL Your next attack deals !M! more damage."
+  },
+  "Arpeggio": {
+    "NAME": "Arpeggio",
+    "DESCRIPTION": "Attacks have Note A. NL Skills with Block have Note B. NL Other Skills have Note C.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Attacks have Note A. NL Skills with Block have Note B. NL Other Skills have Note C."
+  },
+  "DrumRoll": {
+    "NAME": "Drum Roll",
+    "DESCRIPTION": "Deal !D! damage. Scale: Gain 2 Happy."
+  },
+  "Bop": {
+    "NAME": "Bop",
+    "DESCRIPTION": "Deal X damage, where X is the number of cards you've played this turn.",
+    "UPGRADE_DESCRIPTION": "Deal X damage to ALL enemies, where X is the number of cards you've played this turn."
+  },
+  "DaCapo": {
+    "NAME": "DaCapo",
+    "DESCRIPTION": "Whenever you play a Chord, copy the Notes an additional time."
+  },
+  "Rest": {
+    "NAME": "Rest",
+    "DESCRIPTION": "Gain !B! Block. Gain [R] next turn. NL End your turn. NL Scale: Gain an additional 2 Energy next turn."
+  },
+  "SeizeTheMoment": {
+    "NAME": "Seize the Moment",
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage. Gain !B! Block. Reduce the cost of this card by !M! this combat."
+  },
+  "Octet": {
+    "NAME": "Octet",
+    "DESCRIPTION": "Copy the next card you play 7 times, then end your turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Copy the next card you play 7 times, then end your turn."
+  },
+  "MiddleC": {
+    "NAME": "Middle C",
+    "DESCRIPTION": "Note C. NL Play the top Note A or Note B card from your deck.",
+    "UPGRADE_DESCRIPTION": "Note C. NL Play the top Note A AND the top Note B card from your deck."
+  },
+  "Chime": {
+    "NAME": "Chime",
+    "DESCRIPTION": "Note B. NL Gain !B! Block. NL Draw a card.",
+    "UPGRADE_DESCRIPTION": "Note B. NL Gain !B! Block. NL Draw two cards."
+  },
+  "TollTheBell": {
+    "NAME": "Toll the Bell",
+    "DESCRIPTION": "Note A. NL Deal !D! damage."
+  },
+  "Sforzando": {
+    "NAME": "Sforzando",
+    "DESCRIPTION": "Note C. NL Gain [R] [R].",
+    "UPGRADE_DESCRIPTION": "Note C. NL Gain [R] [R] [R]."
+  },
+  "GoWithTheFlow": {
+    "NAME": "Go with the Flow",
+    "DESCRIPTION": "When you Scale, gain !M! Happy."
+  },
+  "ViciousMockery": {
+    "NAME": "Vicious Mockery",
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Sadness."
+  },
+  "PullTheStrings": {
+    "NAME": "Pull the Strings",
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Puppet."
+  },
+  "PleadForMercy": {
+    "NAME": "Plead for Mercy",
+    "DESCRIPTION": "Gain !B! Block. Whenever an enemy attacks you this turn, they gain !M! Puppet."
+  },
+  "SubliminalTones": {
+    "NAME": "Subliminal Tones",
+    "DESCRIPTION": "At the start of your turn, apply !M! Puppet to ALL enemies."
+  },
+  "ShatteringNote": {
+    "NAME": "Shattering Note",
+    "DESCRIPTION": "Apply 1 Puppet, then deal !D! damage. NL Damage is increased by the amount of Puppet the enemy has."
+  },
+  "WallOfSound": {
+    "NAME": "Wall of Sound",
+    "DESCRIPTION": "Gain !B! Block. Apply !M! Puppet to ALL enemies. Then gain X block, where X is the amount of Puppet among ALL enemies."
+  },
+  "PuppetShow": {
+    "NAME": "Puppet Show",
+    "DESCRIPTION": "Note C. NL Apply !M! Puppet to ALL enemies, and 6 extra Puppet to Minions."
+  },
+  "Dance": {
+    "NAME": "Dance",
+    "DESCRIPTION": "Whenever you Scale, apply !M! Puppet to ALL enemies."
+  },
+  "DiscordantScreech": {
+    "NAME": "Discordant Screech",
+    "DESCRIPTION": "Note A. NL Deal !D! damage to ALL enemies."
+  },
+  "Compose": {
+  "NAME": "Compose",
+  "DESCRIPTION": "Note B. NL Gain !B! Block. Gain [R]."
+},
+  "PiercingChime": {
+    "NAME": "Piercing Chime",
+    "DESCRIPTION": "Note B. NL ALL enemies lose !M! Strength this turn. NL Scale: They lose an additional 2 Strength this turn."
+  },
+  "SonicShield": {
+    "NAME": "Sonic Shield",
+    "DESCRIPTION": "Note B. NL Gain !B! Block."
+  },
+  "TaleCollector": {
+    "NAME": "Tale Collector",
+    "DESCRIPTION": "Deal !D! +X damage, where X is the number of ? Rooms you've visited.",
+    "UPGRADE_DESCRIPTION": "Note A. NL Deal !D! +X damage, where X is the number of ? Rooms you've visited."
+  },
+  "OneManBand": {
+    "NAME": "One Man Band",
+    "DESCRIPTION": "Exhaust ALL Strikes and Defends. NL Shuffle 8 random common cards into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Exhaust ALL Strikes and Defends. NL Shuffle 8 random cards of any rarity into your draw pile. NL Exhaust."
+  },
+  "Octave": {
+    "NAME": "Octave",
+    "DESCRIPTION": "Deal !D! damage. NL If this is the 8th card played this turn, deal 10 times as much damage.",
+    "UPGRADE_DESCRIPTION": "Note A. NL Deal !D! damage. NL If this is the 8th card played this turn, deal 10 times as much damage."
+  },
+  "Chorus": {
+    "NAME": "Chorus",
+    "DESCRIPTION": "Exhaust a card from your hand with cost X or less. Copy that card at the start of each turn.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Exhaust a card from your hand with cost X or less. Copy that card at the start of each turn."
+  },
+  "Pluck": {
+    "NAME": "Pluck",
+    "DESCRIPTION": "Put a Note card from your draw or discard pile into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Put !M! Note cards from your draw or discard pile into your hand. NL Exhaust."
+  },
+  "Lento": {
+    "NAME": "Lento",
+    "DESCRIPTION": "Apply 1 Slow until end of turn.",
+    "UPGRADE_DESCRIPTION": "Apply 1 Slow. NL Exhaust."
+  },
+  "ShotThroughTheHeart": {
+    "NAME": "Shot Through The Heart",
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Vulnerable."
+  },
+  "SootheTheSoul": {
+    "NAME": "Soothe the Soul",
+    "DESCRIPTION": "Note C. NL Gain 1 Harmony. NL Remove 1 random debuff.",
+    "UPGRADE_DESCRIPTION": "Note C. NL Gain 2 Harmony. NL Remove ALL debuffs."
+  }
+}
