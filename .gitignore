@@ -5,4 +5,6 @@
 /.idea/.gitignore
 /lib
 /_ModTheSpire
-/BardMod/target/*
+/BardMod/target/BardMod.jar
+/BardMod/target/BardMod-0.0.1-shaded.jar
+/BardMod/target/original-BardMod.jar
