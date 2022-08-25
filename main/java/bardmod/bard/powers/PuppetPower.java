@@ -17,8 +17,10 @@ public class PuppetPower
         extends AbstractPower {
     public static final String POWER_ID = "PuppetPower";
     public static final String NAME = "Puppet";
+    public static final int THRESHOLD = 10;
+    public static final int LOSE_ON_ACTIVATION = 10;
     public static final String[] DESCRIPTIONS =  new String[]{
-            "When an enemy with 10 Puppet attacks, they lose 10 Puppet and the attack is redirected to a random enemy."
+            "When an enemy with " + THRESHOLD + " Puppet attacks, they lose " + LOSE_ON_ACTIVATION + " Puppet and the attack is redirected to a random enemy."
     };
 
     public PuppetPower(AbstractCreature owner, int amount) {
@@ -44,7 +46,7 @@ public class PuppetPower
         {
             AbstractMonster m = AbstractDungeon.getCurrRoom().monsters.getRandomMonster();
             if (this.amount == 10) {
-                addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, HappyPower.POWER_ID));
+                addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, PuppetPower.POWER_ID));
             }
             else {
                 addToBot(new ReducePowerAction(owner, owner, this.ID, 10));

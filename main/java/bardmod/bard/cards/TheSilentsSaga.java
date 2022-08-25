@@ -1,6 +1,7 @@
 package bardmod.bard.cards;
 
 import bardmod.BardMod;
+import bardmod.bard.BardCardTags;
 import bardmod.bard.BardColor;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -30,7 +31,7 @@ public class TheSilentsSaga extends CustomCard {
 
     public TheSilentsSaga() {
         super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.UNCOMMON, CardTarget.ALL);
-
+        tags.add(BardCardTags.STORY);
     }
 
     @Override

@@ -102,8 +102,13 @@
   },
   "TheDefectsDrama": {
     "NAME": "The Defect's Drama",
-    "DESCRIPTION": "Add a Defect Power card to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Add a Defect Power card to your hand. It costs 0 this turn. NL Exhaust."
+    "DESCRIPTION": "Gain two orb slots. NL Channel a random orb at the start of your turn.",
+    "UPGRADE_DESCRIPTION": "Gain two orb slots. NL Channel two random orbs at the start of your turn."
+  },
+  "TheIroncladsInsights": {
+    "NAME": "The Ironclad's Insights",
+    "DESCRIPTION": "Exhaust the top card of your draw pile. NL Deal !D! damage for each exhausted card.",
+    "UPGRADE_DESCRIPTION": "Choose and exhaust a card from your draw pile. NL Deal !D! damage for each exhausted card."
   },
   "TheBardsLament": {
     "NAME": "The Bard's Lament",
@@ -234,11 +239,6 @@
     "DESCRIPTION": "Exhaust ALL Strikes and Defends. NL Shuffle 8 random common cards into your draw pile. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Exhaust ALL Strikes and Defends. NL Shuffle 8 random cards of any rarity into your draw pile. NL Exhaust."
   },
-  "Lente": {
-    "NAME": "Lente",
-    "DESCRIPTION": "Apply 1 Slow until end of turn.",
-    "UPGRADE_DESCRIPTION": "Apply 1 Slow. NL Exhaust."
-  },
   "Octave": {
     "NAME": "Octave",
     "DESCRIPTION": "Deal !D! damage. NL If this is the 8th card played this turn, deal 10 times as much damage.",
@@ -246,11 +246,26 @@
   },
   "Chorus": {
     "NAME": "Chorus",
-    "DESCRIPTION": "Exhaust a card from your hand. Copy that card at the start of each turn."
+    "DESCRIPTION": "Exhaust a card from your hand with cost X or less. Copy that card at the start of each turn.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Exhaust a card from your hand with cost X or less. Copy that card at the start of each turn."
   },
   "Pluck": {
     "NAME": "Pluck",
     "DESCRIPTION": "Put a Note card from your draw or discard pile into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Put two Note cards from your draw or discard pile into your hand. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Put !M! Note cards from your draw or discard pile into your hand. NL Exhaust."
+  },
+  "Lento": {
+    "NAME": "Lento",
+    "DESCRIPTION": "Apply 1 Slow until end of turn.",
+    "UPGRADE_DESCRIPTION": "Apply 1 Slow. NL Exhaust."
+  },
+  "ShotThroughTheHeart": {
+    "NAME": "Shot Through The Heart",
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Vulnerable."
+  },
+  "SootheTheSoul": {
+    "NAME": "Soothe the Soul",
+    "DESCRIPTION": "Note C. NL Gain 1 Harmony. NL Remove 1 random debuff.",
+    "UPGRADE_DESCRIPTION": "Note C. NL Gain 2 Harmony. NL Remove ALL debuffs."
   }
 }

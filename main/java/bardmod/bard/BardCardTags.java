@@ -5,6 +5,9 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 
 public class BardCardTags {
     @SpireEnum
+    public static AbstractCard.CardTags STORY;
+
+    @SpireEnum
     public static AbstractCard.CardTags NOTE_A;
 
     @SpireEnum

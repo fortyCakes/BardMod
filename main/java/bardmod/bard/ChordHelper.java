@@ -17,7 +17,7 @@ public class ChordHelper {
 
     public static void receiveCardUsed(AbstractCard card) {
 
-        if (card.purgeOnUse) return;
+        if (card.hasTag(BardCardTags.IS_CHORD)) return;
 
         boolean cardUsedAsNote = false;
 

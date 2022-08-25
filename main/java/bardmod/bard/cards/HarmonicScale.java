@@ -25,6 +25,7 @@ public class HarmonicScale extends CustomCard {
         super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseBlock = BLOCK;
         this.baseMagicNumber = SCALE_BLOCK;
+        this.magicNumber = baseMagicNumber;
     }
 
     public void triggerOnGlowCheck() {
