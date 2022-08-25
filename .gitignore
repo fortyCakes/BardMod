@@ -5,4 +5,4 @@
 /.idea/.gitignore
 /lib
 /_ModTheSpire
-/BardMod/target
+/BardMod/target/*
