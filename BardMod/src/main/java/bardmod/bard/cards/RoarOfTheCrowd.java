@@ -2,8 +2,8 @@ package bardmod.bard.cards;
 
 import bardmod.BardMod;
 import bardmod.bard.BardColor;
-import bardmod.bard.powers.ShowMustGoOnPower;
-import bardmod.bard.powers.ShowMustGoOnUpgradedPower;
+import bardmod.bard.powers.RoarOfTheCrowdPower;
+import bardmod.bard.powers.RoarOfTheCrowdUpgradedPower;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -12,15 +12,15 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class ShowMustGoOn extends CustomCard {
-    public static final String ID = "ShowMustGoOn";
+public class RoarOfTheCrowd extends CustomCard {
+    public static final String ID = "RoarOfTheCrowd";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final int COST = 0;
+    private static final int COST = 1;
 
 
-    public ShowMustGoOn() {
+    public RoarOfTheCrowd() {
         super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.POWER, BardColor.BARD_ORANGE, CardRarity.RARE, CardTarget.SELF);
     }
 
@@ -38,10 +38,10 @@ public class ShowMustGoOn extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (upgraded)
         {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,p, new ShowMustGoOnUpgradedPower(p, 1), 1));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,p, new RoarOfTheCrowdUpgradedPower(p, 1), 1));
         }
         else {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,p, new ShowMustGoOnPower(p, 1), 1));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,p, new RoarOfTheCrowdPower(p, 1), 1));
         }
     }
 }

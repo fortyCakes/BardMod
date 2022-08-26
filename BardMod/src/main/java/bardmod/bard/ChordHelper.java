@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.cards.CardQueueItem;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class ChordHelper {
 
@@ -61,6 +62,7 @@ public class ChordHelper {
 
         if (chord.ChordComplete())
         {
+            TriggerOnChordEvents();
             PlayChordCards(chord);
 
             if (AbstractDungeon.player.hasPower(DaCapoPower.POWER_ID))
@@ -73,6 +75,18 @@ public class ChordHelper {
             }
 
             AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, ChordPower.POWER_ID));
+        }
+    }
+
+    private static void TriggerOnChordEvents() {
+        TriggerEventsForPlayerPowers();
+    }
+
+    private static void TriggerEventsForPlayerPowers() {
+        for (AbstractPower pow : AbstractDungeon.player.powers){
+            if (pow instanceof ITriggerOnChord){
+                ((ITriggerOnChord)pow).onChord();
+            }
         }
     }
 
