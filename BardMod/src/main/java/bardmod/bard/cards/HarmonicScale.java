@@ -17,15 +17,12 @@ public class HarmonicScale extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = -1;
-    private static final int BLOCK = 3;
-    private static final int SCALE_BLOCK = 1;
+    private static final int BLOCK = 0;
     private static final int UPGRADE_PLUS_BLOCK = 1;
 
     public HarmonicScale() {
         super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseBlock = BLOCK;
-        this.baseMagicNumber = SCALE_BLOCK;
-        this.magicNumber = baseMagicNumber;
     }
 
     public void triggerOnGlowCheck() {
@@ -37,12 +34,7 @@ public class HarmonicScale extends CustomCard {
         for (int i = 0; i < energyOnUse; i++)
         {
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-                if (ScaleHelper.WasScale(energyOnUse))
-                {
-                    AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, block + magicNumber));
-                } else {
-                    AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, block));
-                }
+                addToBot(new GainBlockAction(p, block));
             }
         }
     }
@@ -53,5 +45,11 @@ public class HarmonicScale extends CustomCard {
             upgradeName();
             upgradeBlock(UPGRADE_PLUS_BLOCK);
         }
+    }
+
+    @Override
+    public void applyPowers() {
+        super.applyPowers();
+        ScaleHelper.applyToBlock(this);
     }
 }

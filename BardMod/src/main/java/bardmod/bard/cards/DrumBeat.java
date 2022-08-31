@@ -1,6 +1,7 @@
 package bardmod.bard.cards;
 
 import bardmod.BardMod;
+import bardmod.bard.BardCardTags;
 import bardmod.bard.BardColor;
 import bardmod.bard.ScaleHelper;
 import basemod.abstracts.CustomCard;
@@ -29,6 +30,7 @@ public class DrumBeat extends CustomCard {
 
         this.baseDamage = ATTACK_DMG;
         this.baseMagicNumber = ENERGY_AMOUNT;
+        tags.add(BardCardTags.SCALE);
     }
 
     public void triggerOnGlowCheck() {
@@ -40,7 +42,7 @@ public class DrumBeat extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        if (ScaleHelper.WasScale(cost)){
+        if (ScaleHelper.ScaleAmount() >= 3){
             AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(magicNumber));
         }
     }

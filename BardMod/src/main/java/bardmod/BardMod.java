@@ -3,6 +3,7 @@ package bardmod;
 import bardmod.bard.BardColor;
 import bardmod.bard.BardEnum;
 import bardmod.bard.ChordHelper;
+import bardmod.bard.ScaleHelper;
 import bardmod.bard.cards.Strike_BARD;
 import bardmod.bard.characters.TheBard;
 import bardmod.bard.relics.SevenStringLute;
@@ -86,14 +87,16 @@ public class BardMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 
     @Override
     public void receiveEditKeywords(){
-        BaseMod.addKeyword(new String[]{"Chord", "Note A", "Note B", "Note C"}, "When cards with Note A, B and C have all been played, they are all played again.");
-        BaseMod.addKeyword(new String[]{"Happy"}, "Happy increases your damage, and decreases each turn.");
-        BaseMod.addKeyword(new String[]{"Sadness"}, "Sadness decreases the damage enemies deal, and decreases each turn.");
+        BaseMod.addKeyword(BardMod.MOD_ID, "Chord", new String[]{"Chord", "Note A", "Note B", "Note C"}, "When cards with Note A, B and C have all been played, they are all played again.");
+        BaseMod.addKeyword(BardMod.MOD_ID, "Happy", new String[]{"Happy"}, "Happy increases your damage, and decreases each turn.");
+        BaseMod.addKeyword(BardMod.MOD_ID, "Sadness", new String[]{"Sadness"}, "Sadness decreases the damage enemies deal, and decreases each turn.");
+        BaseMod.addKeyword(BardMod.MOD_ID, "Scale", new String[] {"Scale"}, "Determines the power of Scale cards. Gain Scale when you play a card that costs 1 more or less than your last card; otherwise, your Scale resets to 1.");
     }
 
     @Override
     public void receiveCardUsed(AbstractCard abstractCard) {
         ChordHelper.receiveCardUsed(abstractCard);
+        ScaleHelper.receiveCardUsed(abstractCard);
     }
 
     public static final String makeCardImagePath(String cardName) {

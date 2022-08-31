@@ -1,3 +1,4 @@
+bardmod\bard\ITriggerOnChord.class
 bardmod\bard\cards\TripleTime.class
 bardmod\bard\ChordHelper.class
 bardmod\bard\LibraryTypeEnum.class
@@ -10,6 +11,7 @@ bardmod\bard\cards\Rest.class
 bardmod\bard\cards\ShatteringNote.class
 bardmod\bard\cards\OctetResolution.class
 bardmod\bard\cards\DrumRoll.class
+bardmod\bard\ITriggerOnScale.class
 bardmod\bard\cards\TollTheBell.class
 bardmod\bard\cards\DiscordantScreech.class
 bardmod\bard\actions\unique\IroncladsInsightsAction.class
@@ -29,18 +31,22 @@ bardmod\bard\cards\ViciousMockery.class
 bardmod\bard\cards\PiercingChime.class
 bardmod\bard\actions\unique\PluckAction.class
 bardmod\bard\cards\SootheTheSoul.class
+bardmod\bard\cards\MaimingMelody.class
 bardmod\bard\characters\TheBard.class
 bardmod\bard\actions\unique\TripleSadAction.class
 bardmod\bard\cards\SonicShield.class
+bardmod\bard\cards\TheBardsLament.class
 bardmod\bard\cards\Defend_BARD.class
 bardmod\bard\cards\Feedback.class
 bardmod\bard\powers\PuppetPower.class
 bardmod\bard\cards\Conduct.class
 bardmod\bard\actions\unique\DoubleSadAction.class
+bardmod\bard\powers\RoarOfTheCrowdUpgradedPower.class
 bardmod\bard\powers\ShowMustGoOnUpgradedPower.class
 bardmod\bard\BardEnum.class
 bardmod\bard\cards\SeizeTheMoment.class
 bardmod\bard\cards\SteelScale.class
+bardmod\bard\cards\RoarOfTheCrowd.class
 bardmod\bard\cards\GoWithTheFlow.class
 bardmod\bard\cards\LeadIn.class
 bardmod\bard\powers\DaCapoPower.class
@@ -59,9 +65,11 @@ bardmod\bard\powers\RemoveSlowPower.class
 bardmod\bard\cards\PuppetShow.class
 bardmod\bard\cards\DrumBeat.class
 bardmod\bard\cards\TheSilentsSaga.class
+bardmod\bard\powers\MaimingMelodyPower.class
 bardmod\bard\powers\WhispersPower.class
 bardmod\bard\cards\ShotThroughTheHeart.class
 bardmod\bard\powers\NeowPowerPatch.class
+bardmod\bard\powers\ScalePower.class
 bardmod\bard\cards\Jam.class
 bardmod\bard\cards\InvertedMinor.class
 bardmod\bard\BardCardTags.class
@@ -89,4 +97,5 @@ bardmod\bard\powers\ChordPower.class
 bardmod\bard\cards\OneManBand.class
 bardmod\bard\cards\SubliminalTones.class
 bardmod\bard\cards\TheIroncladsInsights.class
+bardmod\bard\powers\RoarOfTheCrowdPower.class
 bardmod\bard\powers\ChaosPower.class

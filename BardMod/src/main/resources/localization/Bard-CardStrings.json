@@ -30,7 +30,7 @@
     "UPGRADE_DESCRIPTION": "Triple target enemy's Sadness."
   },
   "InvertedMinor": {
-    "NAME": "InvertedMinor",
+    "NAME": "Inverted Minor",
     "DESCRIPTION": "Each enemy gains X Sadness.",
     "UPGRADE_DESCRIPTION": "Each enemy gains X +1 Sadness."
   },
@@ -57,11 +57,11 @@
   },
   "SteelScale": {
     "NAME": "Steel Scale",
-    "DESCRIPTION": "Gain !B! Block. NL Scale: Gain !M! Block."
+    "DESCRIPTION": "Gain !B! Block. NL Block is increased by your Scale."
   },
   "DrumBeat": {
     "NAME": "Drum Beat",
-    "DESCRIPTION": "Deal !D! damage. NL Scale: Gain [R]."
+    "DESCRIPTION": "Deal !D! damage. NL If your Scale is 3 or more, gain [R]."
   },
   "ShowMustGoOn": {
     "NAME": "The Show Must Go On",
@@ -88,7 +88,8 @@
   },
   "HarmonicScale": {
     "NAME": "Harmonic Scale",
-    "DESCRIPTION": "Gain !B! Block per enemy, X times. NL Scale: Gain !B! + !M! Block instead."
+    "DESCRIPTION": "Gain !B! Block per enemy, X times. NL Block is equal to your Scale.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block per enemy, X + 1 times. NL Block is equal to your Scale."
   },
   "TheSilentsSaga": {
     "NAME": "The Silent's Saga",
@@ -134,7 +135,8 @@
   },
   "DrumRoll": {
     "NAME": "Drum Roll",
-    "DESCRIPTION": "Deal !D! damage. Scale: Gain 2 Happy."
+    "DESCRIPTION": "Deal !D! damage. NL Gain 1 Happy for every 3 Scale you have.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain 1 Happy for every 2 Scale you have."
   },
   "Bop": {
     "NAME": "Bop",
@@ -223,7 +225,7 @@
 },
   "PiercingChime": {
     "NAME": "Piercing Chime",
-    "DESCRIPTION": "Note B. NL ALL enemies lose !M! Strength this turn. NL Scale: They lose an additional 2 Strength this turn."
+    "DESCRIPTION": "Note B. NL Apply 1 Sadness to ALL enemies for every !M! Scale you have."
   },
   "SonicShield": {
     "NAME": "Sonic Shield",
@@ -267,5 +269,14 @@
     "NAME": "Soothe the Soul",
     "DESCRIPTION": "Note C. NL Gain 1 Harmony. NL Remove 1 random debuff.",
     "UPGRADE_DESCRIPTION": "Note C. NL Gain 2 Harmony. NL Remove ALL debuffs."
+  },
+  "MaimingMelody": {
+    "NAME": "Maiming Melody",
+    "DESCRIPTION": "Whenever you Scale, deal !M! damage to ALL enemies."
+  },
+  "CuttingCouplet": {
+    "NAME": "Cutting Couplet",
+    "DESCRIPTION": "Deal !D! damage to a random enemy twice. Damage is increased by your Scale.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to a random enemy twice. Damage is increased by twice your Scale."
   }
 }

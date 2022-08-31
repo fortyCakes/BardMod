@@ -38,7 +38,6 @@ public class ShatteringNote extends CustomCard {
         action.update();
 
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL)));
-
     }
 
     @Override

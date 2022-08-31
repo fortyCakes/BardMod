@@ -18,22 +18,17 @@ public class SteelScale extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 0;
     private static final int BLOCK = 3;
-    private static final int ADDITIONAL_BLOCK = 3;
 
     public SteelScale() {
         super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.COMMON, CardTarget.SELF);
 
         this.baseBlock = BLOCK;
-        this.baseMagicNumber = ADDITIONAL_BLOCK;
+        tags.add(BardCardTags.SCALE);
     }
 
 
     public void use(com.megacrit.cardcrawl.characters.AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.GainBlockAction(p, p, this.block));
-        if (ScaleHelper.WasScale(cost))
-        {
-            AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.GainBlockAction(p, p, this.magicNumber));
-        }
+        AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.GainBlockAction(p, p, this.block + ScaleHelper.ScaleAmount()));
     }
 
     public void triggerOnGlowCheck() {
@@ -49,5 +44,11 @@ public class SteelScale extends CustomCard {
             upgradeName();
             tags.add(BardCardTags.NOTE_B);
         }
+    }
+
+    @Override
+    public void applyPowers() {
+        super.applyPowers();
+        ScaleHelper.applyToBlock(this);
     }
 }

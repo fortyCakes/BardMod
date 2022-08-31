@@ -18,4 +18,7 @@ public class BardCardTags {
 
     @SpireEnum
     public static AbstractCard.CardTags IS_CHORD;
+
+    @SpireEnum
+    public static AbstractCard.CardTags SCALE;
 }
