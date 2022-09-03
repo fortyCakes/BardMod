@@ -30,7 +30,7 @@
     "UPGRADE_DESCRIPTION": "Triple target enemy's Sadness."
   },
   "InvertedMinor": {
-    "NAME": "InvertedMinor",
+    "NAME": "Inverted Minor",
     "DESCRIPTION": "Each enemy gains X Sadness.",
     "UPGRADE_DESCRIPTION": "Each enemy gains X +1 Sadness."
   },
@@ -135,7 +135,8 @@
   },
   "DrumRoll": {
     "NAME": "Drum Roll",
-    "DESCRIPTION": "Deal !D! damage. Scale: Gain 2 Happy."
+    "DESCRIPTION": "Deal !D! damage. NL Gain 1 Happy for every 3 Scale you have.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain 1 Happy for every 2 Scale you have."
   },
   "Bop": {
     "NAME": "Bop",
@@ -154,10 +155,10 @@
     "NAME": "Seize the Moment",
     "DESCRIPTION": "Ethereal. NL Deal !D! damage. Gain !B! Block. Reduce the cost of this card by !M! this combat."
   },
-  "Octet": {
-    "NAME": "Octet",
-    "DESCRIPTION": "Copy the next card you play 7 times, then end your turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Copy the next card you play 7 times, then end your turn."
+  "OctetForm": {
+    "NAME": "Octet Form",
+    "DESCRIPTION": "Ethereal. NL Whenever you play a card, copy it 7 times, then end your turn.",
+    "UPGRADE_DESCRIPTION": "Whenever you play a card, copy it 7 times, then end your turn."
   },
   "MiddleC": {
     "NAME": "Middle C",
@@ -224,7 +225,7 @@
 },
   "PiercingChime": {
     "NAME": "Piercing Chime",
-    "DESCRIPTION": "Note B. NL ALL enemies lose !M! Strength this turn. NL Scale: They lose an additional 2 Strength this turn."
+    "DESCRIPTION": "Note B. NL Apply 1 Sadness to ALL enemies for every !M! Scale you have."
   },
   "SonicShield": {
     "NAME": "Sonic Shield",
@@ -272,5 +273,46 @@
   "MaimingMelody": {
     "NAME": "Maiming Melody",
     "DESCRIPTION": "Whenever you Scale, deal !M! damage to ALL enemies."
+  },
+  "CuttingCouplet": {
+    "NAME": "Cutting Couplet",
+    "DESCRIPTION": "Deal !D! damage to a random enemy twice. Damage is increased by your Scale.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to a random enemy twice. Damage is increased by twice your Scale."
+  },
+  "Improvisation": {
+    "NAME": "Improvisation",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Apply 3 of a random debuff to each enemy.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. Apply 3 of a random debuff to each enemy twice."
+  },
+  "Verses": {
+    "NAME": "Verses",
+    "DESCRIPTION": "Exhaust cards from your draw pile, discard pile and hand until you have no duplicates.",
+    "UPGRADE_DESCRIPTION": "Exhaust cards from your draw pile, discard pile and hand until you have no duplicates. NL Exhaust."
+  },
+  "GrabTheLute": {
+    "NAME": "Grab the Lute",
+    "DESCRIPTION": "Deal !D! damage. NL If Fatal, gain !M! Gold. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If Fatal, gain !M! Gold."
+  },
+  "Silence": {
+    "NAME": "Silence",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Artifact."
+  },
+  "Reverb": {
+    "NAME": "Reverb",
+    "DESCRIPTION": "Deal !D! damage. NL If this isn't a copy, play it twice."
+  },
+  "HammerOn": {
+    "NAME": "Hammer On",
+    "DESCRIPTION": "Whenever you play a Note this turn, it is played twice."
+  },
+  "NeverEndingStory": {
+    "NAME": "Neverending Story",
+    "DESCRIPTION": "At the start of your turn, add a Story to your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a Story to your hand."
+  },
+  "Pentatonic": {
+    "NAME": "Pentatonic",
+    "DESCRIPTION": "Deal damage equal to your Scale. NL If you have !M! or more Scale, draw a card."
   }
 }
