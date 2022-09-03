@@ -18,9 +18,9 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class OctetPower
         extends AbstractPower {
     public static final String POWER_ID = "OctetPower";
-    public static final String NAME = "Octet";
+    public static final String NAME = "Octet Form";
     public static final String[] DESCRIPTIONS =  new String[]{
-            "Copy your next card played 7 times, then end your turn."
+            "When you play a card, copy it ", " times, then end your turn."
     };
 
 
@@ -39,7 +39,7 @@ public class OctetPower
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        this.description = DESCRIPTIONS[0] + (amount * 8 - 1) + DESCRIPTIONS[1];
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
@@ -48,7 +48,7 @@ public class OctetPower
 
             addResolutionCard(card, action);
 
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < amount * 8; i++)
             {
                 PlayCopyOfCard(card, action);
             }

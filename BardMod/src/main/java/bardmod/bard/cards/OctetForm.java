@@ -11,14 +11,14 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class Octet extends CustomCard {
-    public static final String ID = "Octet";
+public class OctetForm extends CustomCard {
+    public static final String ID = "OctetForm";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 3;
 
-    public Octet() {
+    public OctetForm() {
         super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.RARE, CardTarget.SELF);
 
         this.exhaust = true;
@@ -29,7 +29,7 @@ public class Octet extends CustomCard {
     }
 
     public AbstractCard makeCopy() {
-        return new Octet();
+        return new OctetForm();
     }
 
     public void upgrade() {

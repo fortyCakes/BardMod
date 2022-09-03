@@ -13,7 +13,7 @@ public class OctetResolution extends CustomCard {
     private static final int COST = 3;
 
     public OctetResolution() {
-        super(ID, NAME, BardMod.makeCardImagePath(Octet.ID), COST, DESCRIPTION, CardType.STATUS, CardColor.COLORLESS, CardRarity.RARE, CardTarget.NONE);
+        super(ID, NAME, BardMod.makeCardImagePath(OctetForm.ID), COST, DESCRIPTION, CardType.STATUS, CardColor.COLORLESS, CardRarity.RARE, CardTarget.NONE);
 
         this.exhaust = true;
     }

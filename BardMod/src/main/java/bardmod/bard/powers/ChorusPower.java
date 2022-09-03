@@ -2,14 +2,11 @@ package bardmod.bard.powers;
 
 
 import bardmod.BardMod;
+import bardmod.bard.CopyHelper;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardQueueItem;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class ChorusPower
@@ -46,24 +43,8 @@ public class ChorusPower
     @Override
     public void atStartOfTurn() {
         flash();
-        PlayCopyOfCard(card);
+        CopyHelper.CopyAndPlayCard(card);
     }
 
-    private static void PlayCopyOfCard(AbstractCard card) {
-        AbstractMonster m = AbstractDungeon.getRandomMonster();
 
-        AbstractCard tmp = card.makeSameInstanceOf();
-        AbstractDungeon.player.limbo.addToBottom(tmp);
-        tmp.current_x = card.current_x;
-        tmp.current_y = card.current_y;
-        tmp.target_x = Settings.WIDTH / 2.0F - 300.0F * Settings.scale;
-        tmp.target_y = Settings.HEIGHT / 2.0F;
-
-        if (m != null) {
-            tmp.calculateCardDamage(m);
-        }
-
-        tmp.purgeOnUse = true;
-        AbstractDungeon.actionManager.addCardQueueItem(new CardQueueItem(tmp, m, card.energyOnUse, true, true), true);
-    }
 }

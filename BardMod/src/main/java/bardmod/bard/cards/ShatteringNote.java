@@ -48,6 +48,7 @@ public class ShatteringNote extends CustomCard {
         }
     }
 
+    @Override
     public void calculateCardDamage(AbstractMonster mo) {
         AbstractPower puppet = mo.getPower(PuppetPower.POWER_ID);
 
