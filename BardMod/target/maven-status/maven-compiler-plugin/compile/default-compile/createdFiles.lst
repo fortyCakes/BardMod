@@ -6,6 +6,7 @@ bardmod\bard\ScaleHelper.class
 bardmod\bard\cards\CMinor.class
 bardmod\bard\actions\unique\VersesAction.class
 bardmod\bard\cards\GotTheBlues.class
+bardmod\bard\potions\StringInABottle.class
 bardmod\bard\cards\BFlat.class
 bardmod\bard\cards\Rest.class
 bardmod\bard\cards\OctetForm.class
@@ -49,6 +50,7 @@ bardmod\bard\cards\Feedback.class
 bardmod\bard\powers\PuppetPower.class
 bardmod\bard\cards\Conduct.class
 bardmod\bard\cards\Dance.class
+bardmod\bard\relics\BearPuppet.class
 bardmod\bard\actions\unique\DoubleSadAction.class
 bardmod\bard\powers\RoarOfTheCrowdUpgradedPower.class
 bardmod\bard\powers\ShowMustGoOnUpgradedPower.class
@@ -59,13 +61,16 @@ bardmod\bard\cards\RoarOfTheCrowd.class
 bardmod\bard\cards\GoWithTheFlow.class
 bardmod\bard\cards\LeadIn.class
 bardmod\bard\cards\Reverb.class
+bardmod\bard\relics\CourtesansHarp.class
 bardmod\bard\powers\DaCapoPower.class
 bardmod\bard\powers\ReflectPuppetPower.class
 bardmod\bard\cards\HarmonicScale.class
 bardmod\bard\cards\Octave.class
 bardmod\bard\powers\NeowPower.class
+bardmod\bard\potions\LiquidSunshine.class
 bardmod\bard\relics\SevenStringLute.class
 bardmod\bard\powers\DancePower.class
+bardmod\bard\relics\BrokenLuteString.class
 bardmod\bard\StoryHelper.class
 bardmod\bard\cards\Pluck.class
 bardmod\bard\powers\HappyPower.class
@@ -76,6 +81,7 @@ bardmod\bard\cards\Arpeggio.class
 bardmod\bard\powers\RemoveSlowPower.class
 bardmod\bard\cards\PuppetShow.class
 bardmod\bard\powers\NeverEndingStoryPower.class
+bardmod\bard\relics\RoughRuff.class
 bardmod\bard\cards\DrumBeat.class
 bardmod\bard\cards\TheSilentsSaga.class
 bardmod\bard\cards\Tremolo.class
@@ -83,6 +89,7 @@ bardmod\bard\powers\MaimingMelodyPower.class
 bardmod\bard\powers\WhispersPower.class
 bardmod\bard\cards\ShotThroughTheHeart.class
 bardmod\bard\powers\NeowPowerPatch.class
+bardmod\bard\relics\FeatheredCap.class
 bardmod\bard\powers\ScalePower.class
 bardmod\bard\cards\Silence.class
 bardmod\bard\cards\Jam.class
@@ -98,6 +105,7 @@ bardmod\bard\cards\Improvisation.class
 bardmod\bard\cards\Chorus.class
 bardmod\bard\cards\PullTheStrings.class
 bardmod\bard\cards\Chime.class
+bardmod\bard\relics\BookOfLimericks.class
 bardmod\bard\cards\PleadForMercy.class
 bardmod\bard\cards\Twang.class
 bardmod\bard\cards\Strike_BARD.class
@@ -106,6 +114,7 @@ bardmod\bard\cards\TheWatchersWhispers.class
 bardmod\bard\cards\Bop.class
 bardmod\bard\cards\ShowMustGoOn.class
 bardmod\bard\powers\ShowMustGoOnPower.class
+bardmod\bard\potions\StoryPotion.class
 bardmod\bard\cards\Compose.class
 bardmod\bard\powers\OctetPower.class
 bardmod\bard\cards\NeverEndingStory.class

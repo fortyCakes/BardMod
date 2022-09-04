@@ -57,7 +57,8 @@
   },
   "SteelScale": {
     "NAME": "Steel Scale",
-    "DESCRIPTION": "Gain !B! Block. NL Block is increased by your Scale."
+    "DESCRIPTION": "Gain !B! Block. NL Block is increased by your Scale.",
+    "UPGRADE_DESCRIPTION": "Note B. NL Gain !B! Block. NL Block is increased by your Scale."
   },
   "DrumBeat": {
     "NAME": "Drum Beat",

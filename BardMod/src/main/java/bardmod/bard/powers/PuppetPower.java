@@ -31,6 +31,7 @@ public class PuppetPower
         this.amount = amount;
         this.updateDescription();
         this.img = new Texture(BardMod.makePowerImagePath(POWER_ID));
+        this.type = PowerType.DEBUFF;
     }
 
     public void playApplyPowerSfx() {

@@ -3,7 +3,7 @@
   {
     "NAME": "Seven-String Lute",
     "FLAVOR": "The Seven-String Lute is famously difficult and impressive to play.",
-    "DESCRIPTIONS": ["At the start of each battle and whenever you play a #yChord, gain ", " #yHarmony."]
+    "DESCRIPTIONS": ["At the start of each battle, gain ", " #yHarmony."]
   },
   "SilverStringedLute":
   {
@@ -16,5 +16,47 @@
     "NAME": "Performer's Motley",
     "FLAVOR": "A coat made up of a wide variety of colours, designed to make the wearer appear harmless.",
     "DESCRIPTIONS": ["Whenever you gain a buff or debuff, gain 2 Block."]
+  },
+  "RoughRuff":
+  {
+    "NAME": "Rough Ruff",
+    "FLAVOR": "A spiked ruff worn around the neck. It makes you look much fancier.",
+    "DESCRIPTIONS": ["Whenever you enter a rest site, gain 10 gold for each #yStory in your deck."]
+  },
+  "SneckoCharmersFlute":
+  {
+    "NAME": "Snecko Charmer's Flute",
+    "FLAVOR": "A flute for charming sneckoes. It works on other creatures, too.",
+    "DESCRIPTIONS": ["Whenever you add #yPuppet, add 1 additional #yPuppet."]
+  },
+  "CourtesansHarp":
+  {
+    "NAME": "Courtesan's Harp",
+    "FLAVOR": "A fancy harp made from gold and jewels. Its gentle tones seem out of place here in the Spire.",
+    "DESCRIPTIONS": ["Whenever your #yScale reaches a multiple of 5, draw a card."]
+  },
+  "BearPuppet":
+  {
+    "NAME": "Bear Puppet",
+    "FLAVOR": "A hand puppet made from a real tiny bear. It makes your magic much fiercer.",
+    "DESCRIPTIONS": ["You need 3 less Puppet for it to activate."]
+  },
+  "FeatheredCap":
+  {
+    "NAME": "Feathered Cap",
+    "FLAVOR": "Someone has earned a feather in their cap, it seems. You don't think it was you...?",
+    "DESCRIPTIONS": ["At the start of each battle, add a #yStory card to your hand."]
+  },
+  "BrokenLuteString":
+  {
+    "NAME": "Broken Lute String",
+    "FLAVOR": "A broken string from a lute, a memento from a famous performance.",
+    "DESCRIPTIONS": ["Chords complete with one fewer note."]
+  },
+  "BookOfLimericks":
+  {
+    "NAME": "Book of Limericks",
+    "FLAVOR": "There once was a bard in the Spire NL Whose songs he thought would inspire NL First day on the job NL Chased by Gremlin Nob NL And Hexaghost set him on fire.",
+    "DESCRIPTIONS": ["During non-Boss, non-Elite combats, gain Energy at the start of your turn."]
   }
 }

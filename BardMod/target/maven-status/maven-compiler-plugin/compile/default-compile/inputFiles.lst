@@ -1,5 +1,6 @@
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\LayeredMelody.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\powers\WhispersPower.java
+C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\relics\FeatheredCap.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\HarmonicScale.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\powers\ChorusPower.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\powers\SadnessPower.java
@@ -28,6 +29,7 @@ C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\ja
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\TheBardsLament.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\powers\NeowPower.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\NeverEndingStory.java
+C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\relics\BrokenLuteString.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\Pentatonic.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\GrabTheLute.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\powers\HarmonyPower.java
@@ -60,6 +62,7 @@ C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\ja
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\powers\NeverEndingStoryPower.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\powers\ScalePower.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\actions\unique\VersesAction.java
+C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\relics\RoughRuff.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\ITriggerOnScale.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\DrumRoll.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\Strike_BARD.java
@@ -71,6 +74,7 @@ C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\ja
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\Sforzando.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\Resonance.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\ShowMustGoOn.java
+C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\relics\BearPuppet.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\Feedback.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\BFlat.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\OneManBand.java
@@ -90,11 +94,14 @@ C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\ja
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\powers\HappyPower.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\SubliminalTones.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\actions\unique\DoubleSadAction.java
+C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\relics\BookOfLimericks.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\BardColor.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\Octave.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\Chorus.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\powers\SubliminalTonesPower.java
+C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\relics\CourtesansHarp.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\GoWithTheFlow.java
+C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\potions\StoryPotion.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\UpbeatBeatup.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\ASharp.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\ScaleHelper.java

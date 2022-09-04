@@ -1,0 +1,17 @@
+{
+  "StoryPotion":
+  {
+    "NAME" : "StoryPotion",
+    "DESCRIPTIONS" : ["Add a Story card to your hand. It costs 0 this turn.", "Add 2 Story cards to your hand. They cost 0 this turn."]
+  },
+  "LiquidSunshine":
+  {
+    "NAME" : "Liquid Sunshine",
+    "DESCRIPTIONS" : ["Gain 4 Happy.", "Gain 8 Happy."]
+  },
+  "StringInABottle":
+  {
+    "NAME" : "String in a Bottle",
+    "DESCRIPTIONS" : ["Apply 15 Puppet.", "Apply 30 Puppet."]
+  }
+}

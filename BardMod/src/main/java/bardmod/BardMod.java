@@ -6,16 +6,22 @@ import bardmod.bard.ChordHelper;
 import bardmod.bard.ScaleHelper;
 import bardmod.bard.cards.Strike_BARD;
 import bardmod.bard.characters.TheBard;
+import bardmod.bard.potions.LiquidSunshine;
+import bardmod.bard.potions.StoryPotion;
+import bardmod.bard.potions.StringInABottle;
 import bardmod.bard.relics.PerformersMotley;
 import bardmod.bard.relics.SevenStringLute;
 import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.abstracts.CustomRelic;
 import basemod.interfaces.*;
+import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.KeywordStrings;
+import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
@@ -57,6 +63,14 @@ public class BardMod implements EditCharactersSubscriber, EditCardsSubscriber, E
                 makePath("ui/bardButton"),
                 makePath("ui/bardPortrait"),
                 BardEnum.BARD_CLASS);
+
+        receiveEditPotions();
+    }
+
+    private static void receiveEditPotions() {
+        BaseMod.addPotion(StoryPotion.class, Color.CYAN, Color.YELLOW, Color.WHITE, StoryPotion.POTION_ID, BardEnum.BARD_CLASS);
+        BaseMod.addPotion(LiquidSunshine.class, Color.YELLOW, Color.WHITE, Color.WHITE, LiquidSunshine.POTION_ID, BardEnum.BARD_CLASS);
+        BaseMod.addPotion(StringInABottle.class, Color.WHITE, Color.PURPLE, Color.YELLOW, StringInABottle.POTION_ID, BardEnum.BARD_CLASS);
     }
 
     @Override
@@ -73,7 +87,8 @@ public class BardMod implements EditCharactersSubscriber, EditCardsSubscriber, E
         BaseMod.loadCustomStringsFile(RelicStrings.class, "localization/Bard-RelicStrings.json");
         // CardStrings
         BaseMod.loadCustomStringsFile(CardStrings.class, "localization/Bard-CardStrings.json");
-
+        // PotionStrings
+        BaseMod.loadCustomStringsFile(PotionStrings.class, "localization/Bard-PotionStrings.json");
     }
 
     @Override
@@ -91,10 +106,11 @@ public class BardMod implements EditCharactersSubscriber, EditCardsSubscriber, E
     @Override
     public void receiveEditKeywords(){
         System.out.println("BardMod - receiveEditKeywords");
-        BaseMod.addKeyword(BardMod.MOD_ID, "Chord", new String[]{"Chord", "Note A", "Note B", "Note C"}, "When cards with Note A, B and C have all been played, they are all played again.");
-        BaseMod.addKeyword(BardMod.MOD_ID, "Happy", new String[]{"Happy"}, "Happy increases your damage, and decreases each turn.");
-        BaseMod.addKeyword(BardMod.MOD_ID, "Sadness", new String[]{"Sadness"}, "Sadness decreases the damage enemies deal, and decreases each turn.");
-        BaseMod.addKeyword(BardMod.MOD_ID, "Scale", new String[] {"Scale"}, "Determines the power of Scale cards. Gain Scale when you play a card that costs 1 more or less than your last card; otherwise, your Scale resets to 1.");
+
+        BaseMod.loadCustomStringsFile(KeywordStrings.class, "localization/Bard-KeywordStrings.json");
+        //BaseMod.addKeyword(BardMod.MOD_ID, "Happy", new String[]{"Happy"}, "Happy increases your damage, and decreases each turn.");
+        //BaseMod.addKeyword(BardMod.MOD_ID, "Sadness", new String[]{"Sadness"}, "Sadness decreases the damage enemies deal, and decreases each turn.");
+        //BaseMod.addKeyword(BardMod.MOD_ID, "Scale", new String[] {"Scale"}, "Determines the power of Scale cards. Gain Scale when you play a card that costs 1 more or less than your last card; otherwise, your Scale resets to 1.");
     }
 
     @Override

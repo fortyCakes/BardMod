@@ -19,7 +19,7 @@ public class OctetForm extends CustomCard {
     private static final int COST = 3;
 
     public OctetForm() {
-        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.POWER, BardColor.BARD_ORANGE, CardRarity.RARE, CardTarget.SELF);
 
         this.isEthereal = true;
     }

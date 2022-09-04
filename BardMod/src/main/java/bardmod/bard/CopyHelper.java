@@ -9,21 +9,24 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class CopyHelper {
     public static void CopyAndPlayCard(AbstractCard card) {
-        CopyAndPlayCard(card, 1);
+        CopyAndPlayCard(card, 1, false);
     }
-    public static void CopyAndPlayCard(AbstractCard card, int cardIndex) {
+    public static void CopyAndPlayCard(AbstractCard card, int cardIndex, boolean isChord) {
         AbstractMonster m = AbstractDungeon.getRandomMonster();
-
-        int harmonyAmount = 0;
-        HarmonyPower harmony = (HarmonyPower) AbstractDungeon.player.getPower(HarmonyPower.POWER_ID);
-        if (harmony != null)
-        {
-            harmonyAmount = harmony.amount;
-        }
-
         AbstractCard tmp = card.makeSameInstanceOf();
-        tmp.baseDamage += harmonyAmount;
-        tmp.baseBlock += harmonyAmount;
+
+        if (isChord)
+        {
+            int harmonyAmount = 0;
+            HarmonyPower harmony = (HarmonyPower) AbstractDungeon.player.getPower(HarmonyPower.POWER_ID);
+            if (harmony != null)
+            {
+                harmonyAmount = harmony.amount;
+            }
+
+            tmp.baseDamage += harmonyAmount;
+            tmp.baseBlock += harmonyAmount;
+        }
 
         tmp.tags.add(BardCardTags.IS_CHORD);
 

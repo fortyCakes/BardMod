@@ -1,0 +1,8 @@
+{
+  "Chord":
+  {
+    "PROPER_NAME" : "Chord",
+    "NAMES": ["Chord", "chord", "Note A", "Note B", "Note C"],
+    "DESCRIPTION" : "When cards with Note A, B and C have all been played, they are all played again."
+  }
+}

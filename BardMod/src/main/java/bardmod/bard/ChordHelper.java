@@ -98,9 +98,9 @@ public class ChordHelper {
     }
 
     private static void PlayChordCards(ChordPower chord) {
-        CopyHelper.CopyAndPlayCard(chord.CardC, 1);
-        CopyHelper.CopyAndPlayCard(chord.CardB, 2);
-        CopyHelper.CopyAndPlayCard(chord.CardA, 3);
+        CopyHelper.CopyAndPlayCard(chord.CardC, 1, true);
+        CopyHelper.CopyAndPlayCard(chord.CardB, 2, true);
+        CopyHelper.CopyAndPlayCard(chord.CardA, 3, true);
     }
 
     private static boolean tryAddNoteA(AbstractCard abstractCard) {

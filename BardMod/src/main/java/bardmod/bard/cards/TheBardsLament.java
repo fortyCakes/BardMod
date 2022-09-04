@@ -35,6 +35,9 @@ public class TheBardsLament extends CustomCard {
         {
             cardToGive.upgrade();
         }
+
+        cardToGive.setCostForTurn(0);
+
         addToBot(new MakeTempCardInHandAction(cardToGive, 1));
 
     }

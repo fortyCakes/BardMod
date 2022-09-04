@@ -3,7 +3,7 @@
   {
     "NAME": "Seven-String Lute",
     "FLAVOR": "The Seven-String Lute is famously difficult and impressive to play.",
-    "DESCRIPTIONS": ["At the start of each battle and whenever you play a #yChord, gain ", " #yHarmony."]
+    "DESCRIPTIONS": ["At the start of each battle, gain ", " #yHarmony."]
   },
   "SilverStringedLute":
   {
@@ -40,6 +40,12 @@
     "NAME": "Bear Puppet",
     "FLAVOR": "A hand puppet made from a real tiny bear. It makes your magic much fiercer.",
     "DESCRIPTIONS": ["You need 3 less Puppet for it to activate."]
+  },
+  "FeatheredCap":
+  {
+    "NAME": "Feathered Cap",
+    "FLAVOR": "Someone has earned a feather in their cap, it seems. You don't think it was you...?",
+    "DESCRIPTIONS": ["At the start of each battle, add a #yStory card to your hand."]
   },
   "BrokenLuteString":
   {

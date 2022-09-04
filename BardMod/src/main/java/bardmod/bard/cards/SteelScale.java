@@ -50,5 +50,7 @@ public class SteelScale extends CustomCard {
     public void applyPowers() {
         super.applyPowers();
         ScaleHelper.applyToBlock(this);
+        this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+        initializeDescription();
     }
 }
