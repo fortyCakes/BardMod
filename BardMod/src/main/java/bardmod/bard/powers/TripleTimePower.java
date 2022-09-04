@@ -16,7 +16,7 @@ public class TripleTimePower
     public static final String POWER_ID = "TripleTimePower";
     public static final String NAME = "Triple Time";
     public static final String[] DESCRIPTIONS =  new String[]{
-            "Whenever you play a card that costs 2 or more, gain [R]."
+            "Whenever you play a card that costs 2 or more, gain ", " [R]."
     };
 
 
@@ -35,7 +35,7 @@ public class TripleTimePower
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {

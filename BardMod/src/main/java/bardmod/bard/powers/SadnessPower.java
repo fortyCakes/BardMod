@@ -26,6 +26,7 @@ public class SadnessPower
         this.updateDescription();
         this.img = new Texture(BardMod.makePowerImagePath(POWER_ID));
         this.type = PowerType.DEBUFF;
+        this.isTurnBased = true;
     }
 
     @Override
@@ -42,7 +43,7 @@ public class SadnessPower
 
     public void atEndOfTurn(boolean isPlayer) {
 
-        if (this.amount == 0) {
+        if (this.amount == 1) {
             addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, SadnessPower.POWER_ID));
         } else {
             addToBot(new ReducePowerAction(this.owner, this.owner, SadnessPower.POWER_ID, 1));

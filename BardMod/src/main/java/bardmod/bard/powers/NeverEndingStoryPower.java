@@ -25,6 +25,7 @@ public class NeverEndingStoryPower
         this.ID = POWER_ID;
         this.owner = owner;
         this.updateDescription();
+        this.amount = 1;
         this.img = new Texture(BardMod.makePowerImagePath(POWER_ID));
     }
 

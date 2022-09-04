@@ -21,7 +21,7 @@ public class OctetForm extends CustomCard {
     public OctetForm() {
         super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.RARE, CardTarget.SELF);
 
-        this.exhaust = true;
+        this.isEthereal = true;
     }
 
     public void use(com.megacrit.cardcrawl.characters.AbstractPlayer p, AbstractMonster m) {
@@ -35,7 +35,9 @@ public class OctetForm extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.exhaust = false;
+            this.isEthereal = false;
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 }

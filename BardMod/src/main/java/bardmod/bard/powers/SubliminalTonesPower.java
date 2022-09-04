@@ -21,8 +21,8 @@ public class SubliminalTonesPower
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
-        this.updateDescription();
         this.amount = amount;
+        this.updateDescription();
         this.img = new Texture(BardMod.makePowerImagePath(POWER_ID));
     }
 
@@ -37,6 +37,7 @@ public class SubliminalTonesPower
 
     @Override
     public void atStartOfTurn() {
+        flash();
         for(AbstractMonster m : AbstractDungeon.getMonsters().monsters)
         {
             addToBot(new ApplyPowerAction(m, owner, new PuppetPower(owner, amount), amount));

@@ -149,7 +149,7 @@
   },
   "Rest": {
     "NAME": "Rest",
-    "DESCRIPTION": "Gain !B! Block. Gain [R] next turn. NL End your turn. NL Scale: Gain an additional 2 Energy next turn."
+    "DESCRIPTION": "Gain !B! Block. NL For every 2 Scale you have, gain [R] next turn. NL End your turn."
   },
   "SeizeTheMoment": {
     "NAME": "Seize the Moment",
@@ -313,6 +313,6 @@
   },
   "Pentatonic": {
     "NAME": "Pentatonic",
-    "DESCRIPTION": "Deal damage equal to your Scale. NL If you have !M! or more Scale, draw a card."
+    "DESCRIPTION": "Deal !D! damage. Damage is equal to your Scale. NL If you have !M! or more Scale, draw a card."
   }
 }

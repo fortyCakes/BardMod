@@ -83,8 +83,8 @@ public class Improvisation extends CustomCard {
     private AbstractPower getInstanceOfPower(AbstractPlayer p, AbstractMonster m, int debuffIndex, int debuffStrength) {
         switch(debuffIndex)
         {
-            case 0: return new SadnessPower(p, debuffStrength);
-            case 1: return new WeakPower(p, debuffStrength, false);
+            case 0: return new SadnessPower(m, debuffStrength);
+            case 1: return new WeakPower(m, debuffStrength, false);
             case 2: return new VulnerablePower(p, debuffStrength, false);
             case 3: return new DexterityPower(p, debuffStrength);
             case 4: return new StrengthPower(p, debuffStrength);

@@ -5,8 +5,7 @@ import bardmod.bard.BardColor;
 import bardmod.bard.powers.ReflectPuppetPower;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -34,8 +33,8 @@ public class PleadForMercy extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL)));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new ReflectPuppetPower(p, magicNumber), magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, block));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ReflectPuppetPower(p, magicNumber), magicNumber));
     }
 
     @Override

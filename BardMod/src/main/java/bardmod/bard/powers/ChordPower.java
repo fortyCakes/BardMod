@@ -47,11 +47,11 @@ public class ChordPower
 
         if (CardC != null) {
             desc = desc + " NL #yNote #yC: " + CardC.name;
+            //noinspection UnusedAssignment
             notes += 1;
         }
 
         this.description = desc;
-        this.amount = notes;
     }
 
     public void updateImage(){

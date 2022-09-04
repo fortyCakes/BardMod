@@ -27,8 +27,8 @@ public class PuppetPower
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
-        this.updateDescription();
         this.amount = amount;
+        this.updateDescription();
         this.img = new Texture(BardMod.makePowerImagePath(POWER_ID));
     }
 

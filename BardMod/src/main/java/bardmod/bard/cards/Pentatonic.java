@@ -38,7 +38,8 @@ public class Pentatonic extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (damage > 0)
+        this.calculateCardDamage(m);
+        if (ScaleHelper.ScaleAmount() > 0)
             addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL)));
 
         if (ScaleHelper.ScaleAmount() >= magicNumber)
@@ -58,6 +59,14 @@ public class Pentatonic extends CustomCard {
     @Override
     public void applyPowers() {
         super.applyPowers();
+        for (int i = 0; i < SCALING; i++)
+            ScaleHelper.applyToDamage(this);
+    }
+
+    @Override
+    public void calculateCardDamage(AbstractMonster mo) {
+        super.calculateCardDamage(mo);
+
         for (int i = 0; i < SCALING; i++)
             ScaleHelper.applyToDamage(this);
     }

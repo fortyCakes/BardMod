@@ -51,7 +51,7 @@ public class PiercingChime extends CustomCard {
 
         if (amount > 0) {
             for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
-                addToBot(new ApplyPowerAction(mo, p, new SadnessPower(p, amount), amount));
+                addToBot(new ApplyPowerAction(mo, p, new SadnessPower(mo, amount), amount));
             }
         }
     }

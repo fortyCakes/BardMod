@@ -35,7 +35,7 @@ public class ViciousMockery extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL)));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new SadnessPower(p, magicNumber), magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new SadnessPower(m, magicNumber), magicNumber));
     }
 
     @Override

@@ -27,6 +27,7 @@ public class Feedback extends CustomCard {
         super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
 
         this.baseMagicNumber = DEBUFF_AMOUNT;
+        this.magicNumber = baseMagicNumber;
         this.exhaust = true;
     }
 

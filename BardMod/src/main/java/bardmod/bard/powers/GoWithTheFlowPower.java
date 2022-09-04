@@ -23,9 +23,9 @@ public class GoWithTheFlowPower
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
-        this.updateDescription();
         this.amount = amount;
         this.img = new Texture(BardMod.makePowerImagePath(POWER_ID));
+        this.updateDescription();
     }
 
     @Override

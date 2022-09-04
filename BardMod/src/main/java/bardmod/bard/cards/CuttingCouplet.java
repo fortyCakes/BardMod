@@ -23,7 +23,7 @@ public class CuttingCouplet extends CustomCard {
     private static final int UPGRADE_SCALING = 1;
 
     public CuttingCouplet() {
-        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK, BardColor.BARD_ORANGE, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK, BardColor.BARD_ORANGE, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
 
         this.baseDamage = ATTACK_DMG;
         this.baseMagicNumber = SCALING;
@@ -55,6 +55,14 @@ public class CuttingCouplet extends CustomCard {
     @Override
     public void applyPowers() {
         super.applyPowers();
+        for (int i = 0; i < magicNumber; i++)
+            ScaleHelper.applyToDamage(this);
+    }
+
+    @Override
+    public void calculateCardDamage(AbstractMonster mo) {
+        super.calculateCardDamage(mo);
+
         for (int i = 0; i < magicNumber; i++)
             ScaleHelper.applyToDamage(this);
     }

@@ -4,7 +4,6 @@ package bardmod.bard.powers;
 import bardmod.BardMod;
 import bardmod.bard.cards.OctetResolution;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardQueueItem;
@@ -52,12 +51,6 @@ public class OctetPower
             {
                 PlayCopyOfCard(card, action);
             }
-
-            this.amount--;
-            if (this.amount == 0) {
-                addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, OctetPower.POWER_ID));
-            }
-
         }
     }
 
