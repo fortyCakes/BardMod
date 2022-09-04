@@ -296,7 +296,7 @@
   },
   "Silence": {
     "NAME": "Silence",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Artifact."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Artifact. NL Exhaust."
   },
   "Reverb": {
     "NAME": "Reverb",

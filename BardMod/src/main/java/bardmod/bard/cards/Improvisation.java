@@ -29,7 +29,7 @@ public class Improvisation extends CustomCard {
     private static final int ATTACK_DMG = 10;
     private static final int NUM_DEBUFFS = 1;
 
-    private static final int DEBUFF_STRENGTH = 1;
+    private static final int DEBUFF_STRENGTH = 3;
     private static final int UPGRADE_PLUS_NUM = 1;
 
     public Improvisation() {
@@ -69,13 +69,13 @@ public class Improvisation extends CustomCard {
         );
 
         int debuffIndex = AbstractDungeon.cardRandomRng.random(debuffs.size());
-        int amount = (debuffIndex == 3 || debuffIndex == 4) ? DEBUFF_STRENGTH : -DEBUFF_STRENGTH;
+        int amount = (debuffIndex == 3 || debuffIndex == 4) ? -DEBUFF_STRENGTH : +DEBUFF_STRENGTH;
 
         AbstractPower instance = getInstanceOfPower(AbstractDungeon.player, mo, debuffIndex, amount);
 
         if (instance != null)
         {
-            addToBot(new ApplyPowerAction(AbstractDungeon.player, mo, instance, amount));
+            addToBot(new ApplyPowerAction(mo, AbstractDungeon.player, instance, amount));
         }
 
     }
@@ -85,13 +85,13 @@ public class Improvisation extends CustomCard {
         {
             case 0: return new SadnessPower(m, debuffStrength);
             case 1: return new WeakPower(m, debuffStrength, false);
-            case 2: return new VulnerablePower(p, debuffStrength, false);
-            case 3: return new DexterityPower(p, debuffStrength);
-            case 4: return new StrengthPower(p, debuffStrength);
-            case 5: return new PuppetPower(p, debuffStrength);
-            case 6: return new PoisonPower(p, p, debuffStrength);
-            case 7: return new BlockReturnPower(p, debuffStrength);
-            case 8: return new ChokePower(p, debuffStrength);
+            case 2: return new VulnerablePower(m, debuffStrength, false);
+            case 3: return new DexterityPower(m, debuffStrength);
+            case 4: return new StrengthPower(m, debuffStrength);
+            case 5: return new PuppetPower(m, debuffStrength);
+            case 6: return new PoisonPower(m, p, debuffStrength);
+            case 7: return new BlockReturnPower(m, debuffStrength);
+            case 8: return new ChokePower(m, debuffStrength);
             case 9: return new ConstrictedPower(m, p, debuffStrength);
             default: return null;
         }
@@ -101,7 +101,9 @@ public class Improvisation extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_NUM);
+            upgradeMagicNumber(UPGRADE_PLUS_NUM);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 }

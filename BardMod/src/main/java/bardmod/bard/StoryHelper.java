@@ -18,7 +18,7 @@ public class StoryHelper {
         }
         if (validCards.size() > 0)
         {
-            int index = AbstractDungeon.cardRng.random(validCards.size());
+            int index = AbstractDungeon.cardRng.random(validCards.size() - 1);
             return validCards.get(index);
         }
         else {
