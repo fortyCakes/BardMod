@@ -5,10 +5,14 @@ import bardmod.BardMod;
 import bardmod.bard.ITriggerOnScale;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 
 public class MaimingMelodyPower
         extends AbstractPower
@@ -24,8 +28,8 @@ public class MaimingMelodyPower
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = AbstractDungeon.player;
-        this.updateDescription();
         this.amount = amount;
+        this.updateDescription();
         this.img = new Texture(BardMod.makePowerImagePath(POWER_ID));
     }
 
@@ -36,6 +40,18 @@ public class MaimingMelodyPower
 
     @Override
     public void onScale() {
-        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(AbstractDungeon.player, amount, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new SFXAction("TINGSHA"));
+        if (Settings.FAST_MODE) {
+            addToBot(new VFXAction(new CleaveEffect()));
+        } else {
+            addToBot(new VFXAction(this.owner, new CleaveEffect(), 0.2F));
+        }
+
+        addToBot(new DamageAllEnemiesAction(
+                this.owner,
+                DamageInfo.createDamageMatrix(this.amount, true),
+                DamageInfo.DamageType.THORNS,
+                AbstractGameAction.AttackEffect.NONE,
+                true));
     }
 }

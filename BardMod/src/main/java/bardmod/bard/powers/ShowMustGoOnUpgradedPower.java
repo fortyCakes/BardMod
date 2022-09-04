@@ -41,7 +41,7 @@ public class ShowMustGoOnUpgradedPower
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner) {
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new HappyPower(this.owner, this.amount), this.amount));
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(info.owner, this.owner, new SadnessPower(this.owner, this.amount), this.amount));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(info.owner, this.owner, new SadnessPower(info.owner, this.amount), this.amount));
         }
 
         return damageAmount;

@@ -28,7 +28,7 @@ public class SteelScale extends CustomCard {
 
 
     public void use(com.megacrit.cardcrawl.characters.AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.GainBlockAction(p, p, this.block + ScaleHelper.ScaleAmount()));
+        AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.GainBlockAction(p, p, this.block + ScaleHelper.ScaleAmount));
     }
 
     public void triggerOnGlowCheck() {

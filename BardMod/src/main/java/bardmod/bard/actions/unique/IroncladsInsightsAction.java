@@ -29,6 +29,7 @@ public class IroncladsInsightsAction extends AbstractGameAction {
             {
                 this.isDone = true;
                 p.drawPile.moveToExhaustPile(p.drawPile.getTopCard());
+                return;
             }
             else {
                 AbstractDungeon.gridSelectScreen.open(p.drawPile, 1,  "Select card to exhaust", false, false, false, true);

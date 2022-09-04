@@ -1,6 +1,7 @@
 package bardmod.bard.powers;
 
 import bardmod.BardMod;
+import bardmod.bard.relics.BearPuppet;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -42,19 +43,35 @@ public class PuppetPower
     }
 
     public int onAttackToChangeDamage(DamageInfo info, int damageAmount) {
-        if (this.amount >= 10)
+        if (this.amount >= getThreshold())
         {
             AbstractMonster m = AbstractDungeon.getCurrRoom().monsters.getRandomMonster();
-            if (this.amount == 10) {
+            if (this.amount == getLoseOnActivation()) {
                 addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, PuppetPower.POWER_ID));
             }
             else {
-                addToBot(new ReducePowerAction(owner, owner, this.ID, 10));
+                addToBot(new ReducePowerAction(owner, owner, this.ID, getLoseOnActivation()));
             }
             addToBot(new DamageAction(m, new DamageInfo(owner, info.base), AbstractGameAction.AttackEffect.FIRE));
 
             return 0;
         }
         else return damageAmount;
+    }
+
+    private int getLoseOnActivation() {
+        if (AbstractDungeon.player.hasRelic(BearPuppet.ID))
+        {
+            return LOSE_ON_ACTIVATION - BearPuppet.BEAR_EFFECT;
+        }
+        else return LOSE_ON_ACTIVATION;
+    }
+
+    private int getThreshold() {
+        if (AbstractDungeon.player.hasRelic(BearPuppet.ID))
+        {
+            return THRESHOLD - BearPuppet.BEAR_EFFECT;
+        }
+        else return THRESHOLD;
     }
 }

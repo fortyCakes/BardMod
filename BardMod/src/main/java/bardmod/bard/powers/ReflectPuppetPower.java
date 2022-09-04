@@ -11,8 +11,8 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class ReflectPuppetPower
         extends AbstractPower {
-    public static final String POWER_ID = "PuppetPower";
-    public static final String NAME = "Puppet";
+    public static final String POWER_ID = "ReflectPuppetPower";
+    public static final String NAME = "Plead for Mercy";
     public static final String[] DESCRIPTIONS =  new String[]{
             "When an enemy attacks you, they gain ", " Puppet."
     };

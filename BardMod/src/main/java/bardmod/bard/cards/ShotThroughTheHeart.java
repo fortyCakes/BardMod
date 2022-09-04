@@ -29,7 +29,7 @@ public class ShotThroughTheHeart extends CustomCard {
     private static final int UPGRADE_PLUS_VUL = 1;
 
     public ShotThroughTheHeart() {
-        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK, BardColor.BARD_ORANGE, CardRarity.RARE, CardTarget.ENEMY);
+        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK, BardColor.BARD_ORANGE, CardRarity.UNCOMMON, CardTarget.ENEMY);
 
         this.baseDamage = ATTACK_DMG;
         this.baseMagicNumber = VULNERABLE_AMOUNT;

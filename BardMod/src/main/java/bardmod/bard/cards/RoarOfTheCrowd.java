@@ -38,10 +38,10 @@ public class RoarOfTheCrowd extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (upgraded)
         {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,p, new RoarOfTheCrowdUpgradedPower(p, 1), 1));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,p, new RoarOfTheCrowdUpgradedPower(p, 2), 2));
         }
         else {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,p, new RoarOfTheCrowdPower(p, 1), 1));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,p, new RoarOfTheCrowdPower(p, 2), 2));
         }
     }
 }

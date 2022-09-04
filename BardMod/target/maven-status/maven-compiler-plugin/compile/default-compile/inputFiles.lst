@@ -32,9 +32,11 @@ C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\ja
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\GrabTheLute.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\powers\HarmonyPower.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\PiercingChime.java
+C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\Tremolo.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\TripleTime.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\powers\OctetPower.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\powers\NeowPowerPatch.java
+C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\relics\PerformersMotley.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\actions\unique\ChorusAction.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\Bop.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\TheSilentsSaga.java
@@ -103,10 +105,12 @@ C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\ja
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\DrumBeat.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\SonicShield.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\TollTheBell.java
+C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\DoReMi.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\Lento.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\WallOfSound.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\TheIroncladsInsights.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\relics\SevenStringLute.java
+C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\relics\SilverStringedLute.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\CMajor.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\OctetForm.java
 C:\Users\Lex\Documents\Source\STSModSetup-master\BardMod\src\BardMod\src\main\java\bardmod\bard\cards\Arpeggio.java

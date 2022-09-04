@@ -40,8 +40,10 @@ public class HammerOnPower
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card.hasTag(BardCardTags.NOTE_A) || card.hasTag(BardCardTags.NOTE_B) || card.hasTag(BardCardTags.NOTE_C)) {
-            for (int i = 0; i < amount; i++) CopyHelper.CopyAndPlayCard(card);
+        if (!card.purgeOnUse) {
+            if (card.hasTag(BardCardTags.NOTE_A) || card.hasTag(BardCardTags.NOTE_B) || card.hasTag(BardCardTags.NOTE_C)) {
+                for (int i = 0; i < amount; i++) CopyHelper.CopyAndPlayCard(card);
+            }
         }
     }
 

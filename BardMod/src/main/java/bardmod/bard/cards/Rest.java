@@ -35,7 +35,7 @@ public class Rest extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
 
-        int energyToGain = ScaleHelper.ScaleAmount() / 2;
+        int energyToGain = ScaleHelper.ScaleAmount / 2;
 
         addToBot(new PressEndTurnButtonAction());
         if (energyToGain > 0)

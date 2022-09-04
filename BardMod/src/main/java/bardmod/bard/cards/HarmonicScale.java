@@ -34,9 +34,11 @@ public class HarmonicScale extends CustomCard {
         for (int i = 0; i < energyOnUse; i++)
         {
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-                addToBot(new GainBlockAction(p, block));
+                addToBot(new GainBlockAction(p, ScaleHelper.ScaleAmount));
             }
         }
+
+        AbstractDungeon.player.energy.use(energyOnUse);
     }
 
     @Override

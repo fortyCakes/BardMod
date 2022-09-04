@@ -18,11 +18,11 @@ public class Reverb extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int ATTACK_DMG = 10;
+    private static final int ATTACK_DMG = 8;
     private static final int UPGRADE_PLUS_DAMAGE = 2;
 
     public Reverb() {
-        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK, BardColor.BARD_ORANGE, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK, BardColor.BARD_ORANGE, CardRarity.RARE, CardTarget.ENEMY);
 
         this.baseDamage = ATTACK_DMG;
     }

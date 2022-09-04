@@ -1,6 +1,7 @@
 package bardmod.bard.cards;
 
 import bardmod.BardMod;
+import bardmod.bard.BardCardTags;
 import bardmod.bard.BardColor;
 import bardmod.bard.powers.PuppetPower;
 import basemod.abstracts.CustomCard;
@@ -17,8 +18,8 @@ public class PuppetShow extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 2;
-    private static final int PUPPET = 4;
-    private static final int UPGRADE_PLUS_PUPPET = 1;
+    private static final int PUPPET = 5;
+    private static final int UPGRADE_PLUS_PUPPET = 2;
     private static final int MINION = 6;
 
     public PuppetShow() {
@@ -26,6 +27,8 @@ public class PuppetShow extends CustomCard {
 
         this.baseMagicNumber = PUPPET;
         this.magicNumber = baseMagicNumber;
+
+        tags.add(BardCardTags.NOTE_C);
     }
 
     @Override

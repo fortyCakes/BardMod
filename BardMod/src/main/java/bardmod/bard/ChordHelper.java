@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class ChordHelper {
 
@@ -75,7 +76,17 @@ public class ChordHelper {
     }
 
     private static void TriggerOnChordEvents() {
+
         TriggerEventsForPlayerPowers();
+        TriggerEventsForPlayerRelics();
+    }
+
+    private static void TriggerEventsForPlayerRelics() {
+        for (AbstractRelic rel : AbstractDungeon.player.relics){
+            if (rel instanceof  ITriggerOnChord){
+                ((ITriggerOnChord)rel).onChord();
+            }
+        }
     }
 
     private static void TriggerEventsForPlayerPowers() {

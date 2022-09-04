@@ -38,6 +38,7 @@ public class Pluck extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            upgradeMagicNumber(UPGRADE_PLUS_DRAW_CARDS);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

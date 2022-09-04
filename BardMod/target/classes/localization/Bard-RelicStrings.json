@@ -3,6 +3,18 @@
   {
     "NAME": "Seven-String Lute",
     "FLAVOR": "The Seven-String Lute is famously difficult and impressive to play.",
-    "DESCRIPTIONS": ["At the start of each battle, gain ", " #yHarmony."]
+    "DESCRIPTIONS": ["At the start of each battle and whenever you play a #yChord, gain ", " #yHarmony."]
+  },
+  "SilverStringedLute":
+  {
+    "NAME": "Silver-Stringed Lute",
+    "FLAVOR": "The Silver-Stringed Lute is said to have been brought to the Spire from the faerie realm.",
+    "DESCRIPTIONS": ["At the start of each battle and whenever you play a #yChord, gain 1 Strength and 1 Dexterity."]
+  },
+  "PerformersMotley":
+  {
+    "NAME": "Performer's Motley",
+    "FLAVOR": "A coat made up of a wide variety of colours, designed to make the wearer appear harmless.",
+    "DESCRIPTIONS": ["Whenever you gain a buff or debuff, gain 2 Block."]
   }
 }

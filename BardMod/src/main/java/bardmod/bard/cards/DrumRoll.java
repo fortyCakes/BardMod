@@ -39,7 +39,7 @@ public class DrumRoll extends CustomCard {
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
 
-        int happyAmount = ScaleHelper.ScaleAmount() / (upgraded ? 2 : 3);
+        int happyAmount = ScaleHelper.ScaleAmount / (upgraded ? 2 : 3);
 
         if (happyAmount > 0) {
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new HappyPower(p, happyAmount), happyAmount));

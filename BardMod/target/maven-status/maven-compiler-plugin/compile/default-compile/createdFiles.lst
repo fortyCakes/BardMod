@@ -9,6 +9,7 @@ bardmod\bard\cards\GotTheBlues.class
 bardmod\bard\cards\BFlat.class
 bardmod\bard\cards\Rest.class
 bardmod\bard\cards\OctetForm.class
+bardmod\bard\cards\DoReMi.class
 bardmod\bard\cards\ShatteringNote.class
 bardmod\bard\cards\OctetResolution.class
 bardmod\bard\cards\DrumRoll.class
@@ -25,6 +26,7 @@ bardmod\bard\cards\MiddleC.class
 bardmod\bard\powers\HarmonyPower.class
 bardmod\bard\cards\CMajor.class
 bardmod\bard\CopyHelper.class
+bardmod\bard\relics\SilverStringedLute.class
 bardmod\bard\cards\Resonance.class
 bardmod\BardMod.class
 bardmod\bard\cards\WallOfSound.class
@@ -76,6 +78,7 @@ bardmod\bard\cards\PuppetShow.class
 bardmod\bard\powers\NeverEndingStoryPower.class
 bardmod\bard\cards\DrumBeat.class
 bardmod\bard\cards\TheSilentsSaga.class
+bardmod\bard\cards\Tremolo.class
 bardmod\bard\powers\MaimingMelodyPower.class
 bardmod\bard\powers\WhispersPower.class
 bardmod\bard\cards\ShotThroughTheHeart.class
@@ -112,6 +115,7 @@ bardmod\bard\cards\Lento.class
 bardmod\bard\cards\Strum.class
 bardmod\bard\powers\ChordPower.class
 bardmod\bard\cards\OneManBand.class
+bardmod\bard\relics\PerformersMotley.class
 bardmod\bard\cards\SubliminalTones.class
 bardmod\bard\cards\TheIroncladsInsights.class
 bardmod\bard\powers\RoarOfTheCrowdPower.class

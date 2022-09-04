@@ -2,9 +2,11 @@ package bardmod.bard.powers;
 
 
 import bardmod.BardMod;
+import bardmod.bard.relics.BrokenLuteString;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class ChordPower
@@ -90,7 +92,14 @@ public class ChordPower
     }
 
     public boolean ChordComplete(){
-        return !(CardA == null || CardB == null || CardC == null);
+        int cardsComplete = 0;
+        if (CardA != null) cardsComplete++;
+        if (CardB != null) cardsComplete++;
+        if (CardC != null) cardsComplete++;
+
+        if (AbstractDungeon.player.hasRelic(BrokenLuteString.ID)) return cardsComplete >= 2;
+
+        return cardsComplete == 3;
     }
 
 

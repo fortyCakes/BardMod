@@ -213,7 +213,7 @@
   },
   "Dance": {
     "NAME": "Dance",
-    "DESCRIPTION": "Whenever you Scale, apply !M! Puppet to ALL enemies."
+    "DESCRIPTION": "Whenever you Scale, draw !M! cards."
   },
   "DiscordantScreech": {
     "NAME": "Discordant Screech",
@@ -225,7 +225,7 @@
 },
   "PiercingChime": {
     "NAME": "Piercing Chime",
-    "DESCRIPTION": "Note B. NL Apply 1 Sadness to ALL enemies for every !M! Scale you have."
+    "DESCRIPTION": "Note B. NL Apply 1 Sadness to ALL enemies for every !M! Scale you have, minimum 1."
   },
   "SonicShield": {
     "NAME": "Sonic Shield",
@@ -267,8 +267,8 @@
   },
   "SootheTheSoul": {
     "NAME": "Soothe the Soul",
-    "DESCRIPTION": "Note C. NL Gain 1 Harmony. NL Remove 1 random debuff.",
-    "UPGRADE_DESCRIPTION": "Note C. NL Gain 2 Harmony. NL Remove ALL debuffs."
+    "DESCRIPTION": "Note C. NL Gain !M! Harmony. NL Remove 1 random debuff.",
+    "UPGRADE_DESCRIPTION": "Note C. NL Gain !M! Harmony. NL Remove ALL debuffs."
   },
   "MaimingMelody": {
     "NAME": "Maiming Melody",
@@ -313,6 +313,15 @@
   },
   "Pentatonic": {
     "NAME": "Pentatonic",
-    "DESCRIPTION": "Deal !D! damage. Damage is equal to your Scale. NL If you have !M! or more Scale, draw a card."
+    "DESCRIPTION": "Deal !D! damage. NL If you have 5 or more Scale, draw a card.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If you have 5 or more Scale, draw !M! cards."
+  },
+  "Tremolo": {
+    "NAME": "Tremolo",
+    "DESCRIPTION": "Deal !D! damage. Draw a card. NL If this card increases your Scale, put a copy of it in your hand."
+  },
+  "DoReMi": {
+    "NAME": "DoReMi",
+    "DESCRIPTION": "Deal !D! damage for each Scale you have."
   }
 }

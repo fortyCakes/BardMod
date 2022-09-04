@@ -6,6 +6,7 @@ import bardmod.bard.ChordHelper;
 import bardmod.bard.ScaleHelper;
 import bardmod.bard.cards.Strike_BARD;
 import bardmod.bard.characters.TheBard;
+import bardmod.bard.relics.PerformersMotley;
 import bardmod.bard.relics.SevenStringLute;
 import basemod.AutoAdd;
 import basemod.BaseMod;
@@ -13,12 +14,14 @@ import basemod.abstracts.CustomRelic;
 import basemod.interfaces.*;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 @SpireInitializer
-public class BardMod implements EditCharactersSubscriber, EditCardsSubscriber, EditStringsSubscriber, EditRelicsSubscriber, EditKeywordsSubscriber, OnCardUseSubscriber {
+public class BardMod implements EditCharactersSubscriber, EditCardsSubscriber, EditStringsSubscriber, EditRelicsSubscriber, EditKeywordsSubscriber, OnCardUseSubscriber, OnStartBattleSubscriber, OnPowersModifiedSubscriber {
     private static final String MOD_ASSETS_FOLDER = "img";
     private static final String MOD_ID = "BardClassModId";
 
@@ -87,6 +90,7 @@ public class BardMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 
     @Override
     public void receiveEditKeywords(){
+        System.out.println("BardMod - receiveEditKeywords");
         BaseMod.addKeyword(BardMod.MOD_ID, "Chord", new String[]{"Chord", "Note A", "Note B", "Note C"}, "When cards with Note A, B and C have all been played, they are all played again.");
         BaseMod.addKeyword(BardMod.MOD_ID, "Happy", new String[]{"Happy"}, "Happy increases your damage, and decreases each turn.");
         BaseMod.addKeyword(BardMod.MOD_ID, "Sadness", new String[]{"Sadness"}, "Sadness decreases the damage enemies deal, and decreases each turn.");
@@ -95,8 +99,24 @@ public class BardMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 
     @Override
     public void receiveCardUsed(AbstractCard abstractCard) {
+        System.out.println("BardMod - receiveCardUsed");
         ChordHelper.receiveCardUsed(abstractCard);
         ScaleHelper.receiveCardUsed(abstractCard);
+    }
+
+    @Override
+    public void receiveOnBattleStart(AbstractRoom abstractRoom) {
+        System.out.println("BardMod - receiveOnBattleStart");
+        ScaleHelper.receiveOnBattleStart();
+    }
+
+    @Override
+    public void receivePowersModified() {
+        System.out.println("BardMod - receivePowersModified");
+        if (AbstractDungeon.player.hasRelic(PerformersMotley.ID))
+        {
+            PerformersMotley.receivePowersModified();
+        }
     }
 
     public static final String makeCardImagePath(String cardName) {

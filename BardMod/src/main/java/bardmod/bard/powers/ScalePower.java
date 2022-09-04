@@ -13,7 +13,7 @@ public class ScalePower
     public static final String NAME = "Scale";
     public static final String[] DESCRIPTIONS =  new String[]{
             "Determines the power of Scale cards. Gain Scale when you play a card that costs 1 more or less than your last card; otherwise, your Scale resets to 1.",
-            " NL Play a card costing #y", " or #y", " to gain Scale."
+            " NL Play a card costing #y", " or #y", " to gain Scale.", " NL Play a card costing #y1 to gain Scale."
     };
 
 
@@ -28,6 +28,11 @@ public class ScalePower
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + DESCRIPTIONS[1] + (ScaleHelper.LastCost-1) + DESCRIPTIONS[2] + (ScaleHelper.LastCost+1) + DESCRIPTIONS[3];
+        if (ScaleHelper.LastCost > 0) {
+            this.description = DESCRIPTIONS[0] + DESCRIPTIONS[1] + (ScaleHelper.LastCost-1) + DESCRIPTIONS[2] + (ScaleHelper.LastCost+1) + DESCRIPTIONS[3];
+        }
+        else {
+            this.description = DESCRIPTIONS[0] + DESCRIPTIONS[4];
+        }
     }
 }

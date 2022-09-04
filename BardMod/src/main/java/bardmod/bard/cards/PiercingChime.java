@@ -39,7 +39,7 @@ public class PiercingChime extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int amount = ScaleHelper.ScaleAmount() / magicNumber;
+        int amount = Math.max(1, ScaleHelper.ScaleAmount / magicNumber);
 
         addToBot(new SFXAction("UNLOCK_PING"));
         if (Settings.FAST_MODE) {
@@ -49,10 +49,8 @@ public class PiercingChime extends CustomCard {
             addToBot(new VFXAction(p, new ShockWaveEffect(p.hb.cX, p.hb.cY, BardColor.ORANGE_COLOR, ShockWaveEffect.ShockWaveType.NORMAL), 1.5F));
         }
 
-        if (amount > 0) {
-            for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
-                addToBot(new ApplyPowerAction(mo, p, new SadnessPower(mo, amount), amount));
-            }
+        for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
+            addToBot(new ApplyPowerAction(mo, p, new SadnessPower(mo, amount), amount));
         }
     }
 

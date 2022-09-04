@@ -42,7 +42,7 @@ public class DrumBeat extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        if (ScaleHelper.ScaleAmount() >= 3){
+        if (ScaleHelper.ScaleAmount >= 3){
             AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(magicNumber));
         }
     }

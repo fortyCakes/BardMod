@@ -29,6 +29,7 @@ public class SootheTheSoul extends CustomCard {
         super(ID, NAME, BardMod.makeCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL, BardColor.BARD_ORANGE, CardRarity.RARE, CardTarget.SELF);
         tags.add(BardCardTags.NOTE_C);
         this.baseMagicNumber = HARMONY;
+        this.magicNumber = baseMagicNumber;
     }
 
     @Override
@@ -44,13 +45,15 @@ public class SootheTheSoul extends CustomCard {
             }
         }
 
+        if (debuffs.size() == 0) return;
+
         if (upgraded)
         {
             for (AbstractPower debuff : debuffs) {
                 addToBot(new RemoveSpecificPowerAction(p, p, debuff));
             }
         } else {
-            int index = AbstractDungeon.cardRandomRng.random(debuffs.size()) - 1;
+            int index = AbstractDungeon.cardRandomRng.random(debuffs.size() - 1);
             addToBot(new RemoveSpecificPowerAction(p, p, debuffs.get(index)));
         }
     }
@@ -60,6 +63,8 @@ public class SootheTheSoul extends CustomCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_PLUS_HARMONY);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 }

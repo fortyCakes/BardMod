@@ -19,7 +19,7 @@ public class PleadForMercy extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 2;
     private static final int BLOCK = 10;
-    private static final int PUPPET = 2;
+    private static final int PUPPET = 3;
 
     private static final int UPGRADE_PLUS_BLOCK = 4;
 
